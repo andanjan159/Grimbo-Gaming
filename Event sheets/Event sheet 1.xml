@@ -2,5 +2,70 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="135956644599215">
+            <conditions>
+                <condition id="2" name="Key is down" sid="4303832418862004" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3998310474059915" type="hero">
+                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="8390271076458792" type="hero">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="819907846245123">
+            <conditions>
+                <condition id="2" name="Key is down" sid="85795102288537" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="7632614505912561" type="hero">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9635189979525529" type="hero">
+                    <param id="0" name="Animation">&quot;WalkSide&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3276859744678666">
+            <conditions>
+                <condition id="2" name="Key is down" sid="4668340850374443" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="1628463886766918" type="hero">
+                    <param id="0" name="Control">3</param>
+                </action>
+                <action id="4" name="Set animation" sid="5331500135124119" type="hero">
+                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1690772963874472">
+            <conditions>
+                <condition id="2" name="Key is down" sid="5610966950552215" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="1347654796104255" type="hero">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1520146691253531" type="hero">
+                    <param id="0" name="Animation">&quot;WalkSide&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
