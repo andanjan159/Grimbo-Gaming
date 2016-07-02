@@ -1,2 +1,0 @@
-# Grimbo-Gaming
-We Lit
