@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Adventure &apos;n Stuff</name>
     <description></description>
@@ -152,7 +152,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7877888754481469" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -166,7 +166,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544186036627448" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -174,7 +174,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916964338064717" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\Final\Grimbo-Gaming\expand wrong.jpg" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\Final\Grimbo-Gaming\expand wrong.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -190,6 +190,7 @@
             <layout>Sub 2.xml</layout>
         </layout-folder>
         <layout>Hub World.xml</layout>
+        <layout>Test.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Sub events">
@@ -197,6 +198,7 @@
             <event-sheet>Sub 2 Events.xml</event-sheet>
         </event-folder>
         <event-sheet>Hub Events.xml</event-sheet>
+        <event-sheet>Dungeon Generator.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
