@@ -10,6 +10,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="7" name="Set mirrored" sid="5741095446260395" type="hero">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action id="4" name="Set animation" sid="3998310474059915" type="hero">
                     <param id="0" name="Animation">&quot;WalkUp&quot;</param>
                     <param id="1" name="From">1</param>
@@ -33,7 +36,7 @@
                     <param id="0" name="Animation">&quot;WalkSide&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="8" name="Set flipped" sid="738807580076289" type="hero">
+                <action id="7" name="Set mirrored" sid="738807580076289" type="hero">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -45,6 +48,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="7" name="Set mirrored" sid="3525948918657285" type="hero">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="1628463886766918" type="hero">
                     <param id="0" name="Control">3</param>
                 </action>
@@ -61,6 +67,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="7" name="Set mirrored" sid="7600149293523267" type="hero">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="1347654796104255" type="hero">
                     <param id="0" name="Control">1</param>
                 </action>
