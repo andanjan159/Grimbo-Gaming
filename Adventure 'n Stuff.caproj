@@ -151,8 +151,10 @@
         <object-type name="DungeonObject" sid="5540159649515769">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="sizeX" sid="2850992361516512" type="number" />
-                <instance-variable name="sizeY" sid="6373437982914243" type="number" />
+                <instance-variable name="sizeRoomX" sid="2850992361516512" type="number" />
+                <instance-variable name="sizeRoomY" sid="6373437982914243" type="number" />
+                <instance-variable name="sizeDunX" sid="7202763592291907" type="number" />
+                <instance-variable name="sizeDunY" sid="2315430260635699" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544186036627448" speed="5">

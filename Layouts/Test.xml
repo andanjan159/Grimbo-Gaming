@@ -59,14 +59,16 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <sizeX>0</sizeX>
-                        <sizeY>0</sizeY>
+                        <sizeRoomX>5</sizeRoomX>
+                        <sizeRoomY>5</sizeRoomY>
+                        <sizeDunX>0</sizeDunX>
+                        <sizeDunY>0</sizeDunY>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
-                        <y>256</y>
+                        <x>192</x>
+                        <y>192</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
