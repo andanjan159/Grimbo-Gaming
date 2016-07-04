@@ -138,9 +138,17 @@
     </object-folder>
     <families />
     <layout-folder>
+        <layout-folder name="Sub levels">
+            <layout>Sub1.xml</layout>
+            <layout>Sub 2.xml</layout>
+        </layout-folder>
         <layout>Hub World.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-folder name="Sub events">
+            <event-sheet>Sub 1 Events.xml</event-sheet>
+            <event-sheet>Sub 2 Events.xml</event-sheet>
+        </event-folder>
         <event-sheet>Hub Events.xml</event-sheet>
     </event-folder>
     <global-instances>
