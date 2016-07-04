@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Dungeon Generator</name>
+    <events>
+        <variable constant="0" name="genY" sid="4456172668652299" static="0" type="number">0</variable>
+        <variable constant="0" name="genX" sid="7167374905454071" static="0" type="number">0</variable>
+        <variable constant="0" name="door2" sid="3678798945302068" static="0" type="number">0</variable>
+        <variable constant="0" name="door1" sid="1391859644152224" static="0" type="number">0</variable>
+        <variable constant="0" name="dunY" sid="1117462600116493" static="0" type="number">0</variable>
+        <variable constant="0" name="dunX" sid="8118362732310772" static="0" type="number">0</variable>
+        <event-block sid="9470576237264738">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3863379804041068" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6630546109112574" type="System">
+                    <param id="0" name="Variable">door1</param>
+                    <param id="1" name="Value">random(0,3)</param>
+                </action>
+                <action id="-9" name="Set value" sid="6467941926013131" type="System">
+                    <param id="0" name="Variable">door2</param>
+                    <param id="1" name="Value">random(0,3)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block disabled="1" sid="6700204031311021">
+                    <conditions>
+                        <condition id="-23" name="While" sid="8944668748005772" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="7785967929803934">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8403310665831672" type="System">
+                                    <param id="0" name="Variable">door2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">door1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8646858351226245" type="System">
+                                    <param id="0" name="Variable">door2</param>
+                                    <param id="1" name="Value">random(0,3)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4123160173662728">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="7279696462503891" type="System">
+                            <param id="0" name="Count">DungeonObject.sizeRoomX</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="5071715084097072" type="System">
+                            <param id="0" name="Object to create">Wall</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">genX*64</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="4930380269272565" type="System">
+                            <param id="0" name="Object to create">Wall</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">genX*64</param>
+                            <param id="3" name="Y">DungeonObject.sizeRoomY*64</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="2937357961666552" type="System">
+                            <param id="0" name="Variable">genX</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8662346808860276">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="2115293196941096" type="System">
+                            <param id="0" name="Count">DungeonObject.sizeRoomY</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="8742918036244221" type="System">
+                            <param id="0" name="Object to create">Wall</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">genX*64</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
