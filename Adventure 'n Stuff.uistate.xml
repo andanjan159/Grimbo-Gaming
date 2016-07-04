@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2uistate>
     <!--This is a UI state file - its content describes the user interface settings when the project was last open.
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Layout 1</layout>
-        <layout active="1" order="3">Test</layout>
-        <event-sheet order="2">Event sheet 1</event-sheet>
+        <layout order="0">Hub World</layout>
+        <layout active="1" order="2">Sub 2</layout>
+        <event-sheet order="1">Hub Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,12 +24,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Sub levels/" />
         <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Sub events/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/hero/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/enemy1/" />
+        <folder expanded="1" path="animation-folder/enemy2/" />
+        <folder expanded="1" path="animation-folder/enemy3/" />
     </folders-expanded>
 </c2uistate>
