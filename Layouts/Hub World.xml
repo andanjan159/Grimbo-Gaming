@@ -92,6 +92,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -121,8 +126,8 @@
                         <x>660</x>
                         <y>194</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>79.689002991</width>
+                        <height>103.942001343</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -140,11 +145,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1024</x>
-                        <y>448</y>
+                        <x>864</x>
+                        <y>192</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>79.689002991</width>
+                        <height>103.942001343</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -162,11 +167,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>751</x>
-                        <y>200</y>
+                        <x>1120</x>
+                        <y>192</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>79.689002991</width>
+                        <height>103.942001343</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
