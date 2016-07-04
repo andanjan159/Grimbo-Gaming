@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Adventure &apos;n Stuff</name>
     <description></description>
@@ -51,25 +51,23 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="1846043771752168" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="1846043771752168" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
                 </animation>
                 <animation framecount="3" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="7252876302715798" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
                 </animation>
                 <animation framecount="3" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="6856388543216884" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
                 </animation>
                 <animation framecount="3" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="9117674468230344" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
                 </animation>
                 <animation framecount="3" loop="0" name="AttackUp" pingpong="0" repeatcount="1" repeatto="0" sid="152207618065178" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -139,6 +137,14 @@
                 </animation>
                 <animation framecount="1" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="7796466281714951" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="4458363822623195">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916964338064717" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\expand wrong.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
