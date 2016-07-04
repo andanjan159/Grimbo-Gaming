@@ -16,6 +16,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
@@ -53,6 +54,9 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="5211365095706001">
                     <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="6049587772005376">
+                    <behavior id="bound" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -103,13 +107,22 @@
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="3506079282185405" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="5537809829953641" speed="5">
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="5537809829953641" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="9811457027326363" speed="5">
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="9811457027326363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="415097331047411" speed="5">
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="415097331047411" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -120,13 +133,22 @@
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="6007998699939223" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="1086707584776072" speed="5">
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="1086707584776072" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="1923837947143951" speed="5">
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="1923837947143951" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="6100750839305678" speed="5">
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="6100750839305678" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -134,16 +156,25 @@
         <object-type name="enemy3" sid="671054772269558">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5255844772192809" speed="5">
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="5255844772192809" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="5839292658227952" speed="5">
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="5839292658227952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="2902154347870764" speed="5">
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="2902154347870764" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="7796466281714951" speed="5">
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="7796466281714951" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
