@@ -12,9 +12,11 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -48,6 +50,9 @@
             <behaviors>
                 <behavior-type name="8Direction" sid="5220840455507999">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="5211365095706001">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -139,6 +144,10 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="ground" sid="1735126284935672">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Final\Grimbo-Gaming\Grass_double.jpg" />
         </object-type>
     </object-folder>
     <families />

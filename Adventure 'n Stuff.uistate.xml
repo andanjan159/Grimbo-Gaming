@@ -10,19 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-<<<<<<< HEAD
         <layout active="1" order="0">Hub World</layout>
         <layout order="2">Sub 2</layout>
         <layout order="3">Sub1</layout>
         <event-sheet order="1">Hub Events</event-sheet>
-=======
-        <layout order="0">Hub World</layout>
-        <layout order="2">Sub 2</layout>
-        <layout order="3">Sub1</layout>
-        <layout order="4">Test</layout>
-        <event-sheet active="1" order="1">Hub Events</event-sheet>
-        <event-sheet order="5">Dungeon Generator</event-sheet>
->>>>>>> 81bcff641da3808b2f05e52a031375529a2ec507
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
