@@ -33,6 +33,9 @@
                     <param id="0" name="Animation">&quot;WalkSide&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="8" name="Set flipped" sid="738807580076289" type="hero">
+                    <param id="0" name="State">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3276859744678666">
