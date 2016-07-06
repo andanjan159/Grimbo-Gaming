@@ -1,154 +1,154 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Sub 2 Events</name>
+    <name>Sub 4 Events</name>
     <events>
-        <event-block sid="3922082434538451">
+        <event-block sid="2630982795284821">
             <conditions>
-                <condition id="2" name="Key is down" sid="8122311950982853" type="Keyboard">
+                <condition id="2" name="Key is down" sid="6540120572700975" type="Keyboard">
                     <param id="0" name="Key">87 (W)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="9652735104969126" type="hero">
+                <action id="7" name="Set mirrored" sid="2787368058499098" type="hero">
                     <param id="0" name="State">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="2082087047014902" type="hero">
+                <action id="4" name="Set animation" sid="1865898136200299" type="hero">
                     <param id="0" name="Animation">&quot;WalkUp&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="7887062795202891" type="hero">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="8629704759267866" type="hero">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="8169908382169863">
+        <event-block sid="879505427732699">
             <conditions>
-                <condition id="2" name="Key is down" sid="7319809763016863" type="Keyboard">
+                <condition id="2" name="Key is down" sid="2466331380374895" type="Keyboard">
                     <param id="0" name="Key">65 (A)</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="5069574039369123" type="hero">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="4674657469685412" type="hero">
                     <param id="0" name="Control">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="4771439219384163" type="hero">
+                <action id="4" name="Set animation" sid="9343063639725256" type="hero">
                     <param id="0" name="Animation">&quot;WalkSide&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="4455128989510861" type="hero">
+                <action id="7" name="Set mirrored" sid="8255654247281449" type="hero">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9831753001432969">
+        <event-block sid="7680525133788148">
             <conditions>
-                <condition id="2" name="Key is down" sid="3442293481193934" type="Keyboard">
+                <condition id="2" name="Key is down" sid="3696264503629868" type="Keyboard">
                     <param id="0" name="Key">83 (S)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="7660377644637227" type="hero">
+                <action id="7" name="Set mirrored" sid="9482129646572185" type="hero">
                     <param id="0" name="State">1</param>
                 </action>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="5328525914159661" type="hero">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="7719688091622288" type="hero">
                     <param id="0" name="Control">3</param>
                 </action>
-                <action id="4" name="Set animation" sid="4645701670117667" type="hero">
+                <action id="4" name="Set animation" sid="958734167401986" type="hero">
                     <param id="0" name="Animation">&quot;WalkDown&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="474472936350431">
+        <event-block sid="3257921075459591">
             <conditions>
-                <condition id="2" name="Key is down" sid="6648194532834292" type="Keyboard">
+                <condition id="2" name="Key is down" sid="9525023103700838" type="Keyboard">
                     <param id="0" name="Key">68 (D)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="7715906982931745" type="hero">
+                <action id="7" name="Set mirrored" sid="8849789283988902" type="hero">
                     <param id="0" name="State">1</param>
                 </action>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="442488031745912" type="hero">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="1599575077644937" type="hero">
                     <param id="0" name="Control">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="6588273199364097" type="hero">
+                <action id="4" name="Set animation" sid="3172518172944853" type="hero">
                     <param id="0" name="Animation">&quot;WalkSide&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1538004475988995">
+        <event-block sid="2292136823450129">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="302746057310389" type="hero">
-                    <param id="0" name="Object">greenKey</param>
+                <condition id="0" name="On collision with another object" sid="3564669226135398" type="hero">
+                    <param id="0" name="Object">yellowKey</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="2751071178517532" type="greenKey" />
-                <action id="-10" name="Add to" sid="4677226113367531" type="System">
+                <action id="-9" name="Destroy" sid="4447329846921204" type="yellowKey" />
+                <action id="-10" name="Add to" sid="9387060385898427" type="System">
                     <param id="0" name="Variable">keyPoints</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="488048585324481" type="keyAmount">
+                <action id="0" name="Set text" sid="274207076294592" type="keyAmount">
                     <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="6149137185311362">
+        <event-block sid="2800398286901996">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="1924948633555469" type="System" />
+                <condition id="-2" name="On start of layout" sid="3034974413815148" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="200626261654642" type="keyAmount">
+                <action id="0" name="Set text" sid="2276279840103462" type="keyAmount">
                     <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="2463681145823779">
+        <event-block any="1" sid="1472230418605837">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="985165446493757" type="hero">
+                <condition id="0" name="On collision with another object" sid="4070974214447627" type="hero">
                     <param id="0" name="Object">caveDoorBottom</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="3738297046693851" type="hero">
+                <condition id="0" name="On collision with another object" sid="420495021466455" type="hero">
                     <param id="0" name="Object">caveDoorTop</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="6751844654922905" type="System">
+                <action id="-2" name="Go to layout" sid="709772263636645" type="System">
                     <param id="0" name="Layout">Hub World</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7173191123783644">
+        <event-block sid="2935182594015298">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4610255099178513" type="hero">
+                <condition id="0" name="On collision with another object" sid="7801683311159539" type="hero">
                     <param id="0" name="Object">lava</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="7236702668235776" type="hero" />
+                <action id="-9" name="Destroy" sid="8784813991418467" type="hero" />
             </actions>
         </event-block>
-        <event-block sid="759035667617162">
+        <event-block sid="814796523690257">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4773371002329782" type="enemy1">
+                <condition id="0" name="On collision with another object" sid="308108009360914" type="enemy1">
                     <param id="0" name="Object">lava</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="4954505635423761" type="enemy1" />
+                <action id="-9" name="Destroy" sid="8384263648253975" type="enemy1" />
             </actions>
         </event-block>
-        <event-block sid="5345502500407873">
+        <event-block sid="5038081511601963">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7836348086470446" type="enemy4">
+                <condition id="0" name="On collision with another object" sid="2489491056261177" type="enemy4">
                     <param id="0" name="Object">lava</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="2845737692351228" type="enemy4" />
+                <action id="-9" name="Destroy" sid="9726426769820612" type="enemy4" />
             </actions>
         </event-block>
     </events>
