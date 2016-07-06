@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sub 3 Events</name>
+    <events>
+        <include>Hub Events</include>
+        <event-block sid="2536464354369421">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9466285729200421" type="hero">
+                    <param id="0" name="Object">redKey</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2945638516960229" type="redKey" />
+                <action id="-10" name="Add to" sid="2393537957214535" type="System">
+                    <param id="0" name="Variable">keyPoints</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4098244042407487" type="keyAmount">
+                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2075082731779585">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6979803086271231" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="560551006957444" type="keyAmount">
+                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="3926301065504128">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1976071675559499" type="hero">
+                    <param id="0" name="Object">caveDoorBottom</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1182786446369542" type="hero">
+                    <param id="0" name="Object">caveDoorTop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3603371634655152" type="System">
+                    <param id="0" name="Layout">Hub World</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2253897335986145">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="360963349056107" type="hero">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6109198092104746" type="hero" />
+            </actions>
+        </event-block>
+        <event-block sid="48474040982365">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3615381021009618" type="enemy1">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6406755583061851" type="enemy1" />
+            </actions>
+        </event-block>
+        <event-block sid="6665632737413149">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5780637855313598" type="enemy4">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="700121747875029" type="enemy4" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
