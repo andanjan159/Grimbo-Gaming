@@ -17,6 +17,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -42,13 +43,17 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
         <object-type name="hero" sid="1285143339997762">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="allowMove" sid="812518949669674" type="boolean" />
+                <instance-variable name="allowAttack" sid="622381258247348" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="5220840455507999">
                     <behavior id="EightDir" />
@@ -101,6 +106,20 @@
         </object-type>
         <object-type name="enemy1" sid="8979766893202792">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="savedX" sid="6181718121261184" type="number" />
+                <instance-variable name="savedY" sid="2038776300314671" type="number" />
+                <instance-variable name="playerSpotted" sid="4421049102511492" type="boolean" />
+                <instance-variable name="health" sid="1129459048769009" type="number" />
+                <instance-variable name="allowAttack" sid="5196255369737064" type="boolean" />
+                <instance-variable name="allowMove" sid="1166481934183267" type="boolean" />
+                <instance-variable name="speedBoost" sid="5286982987411244" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="4886890863076474">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="3506079282185405" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -129,23 +148,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="1" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="6100750839305678" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="enemy3" sid="671054772269558">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5255844772192809" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="5839292658227952" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="2902154347870764" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="7796466281714951" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -333,6 +335,42 @@
         <object-type name="keyAmount" sid="9105772461297621">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite" sid="7289627644630177">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4942868690288051" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="playerSwipe" sid="6255754738059282">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1183704384171235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemySwipe" sid="9881505330888376">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4409921175725492" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -352,7 +390,7 @@
         <event-sheet>Dungeon Generator.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Keyboard" uid="22" />
     </global-instances>
     <sounds-folder />
     <music-folder />

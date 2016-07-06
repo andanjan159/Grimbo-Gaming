@@ -3,10 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Hub Events</name>
     <events>
+        <variable constant="0" name="playerHealth" sid="6038929269285387" static="0" type="number">10</variable>
+        <variable constant="0" name="playerAS" sid="6245978028278152" static="0" type="number">1</variable>
         <event-block sid="135956644599215">
             <conditions>
                 <condition id="2" name="Key is down" sid="4303832418862004" type="Keyboard">
                     <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="7269431455794276" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
                 </condition>
             </conditions>
             <actions>
@@ -27,6 +32,9 @@
                 <condition id="2" name="Key is down" sid="85795102288537" type="Keyboard">
                     <param id="0" name="Key">65 (A)</param>
                 </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="511758576844997" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="7632614505912561" type="hero">
@@ -45,6 +53,9 @@
             <conditions>
                 <condition id="2" name="Key is down" sid="4668340850374443" type="Keyboard">
                     <param id="0" name="Key">83 (S)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="6838486002407335" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
                 </condition>
             </conditions>
             <actions>
@@ -65,6 +76,9 @@
                 <condition id="2" name="Key is down" sid="5610966950552215" type="Keyboard">
                     <param id="0" name="Key">68 (D)</param>
                 </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5926870353316137" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="7600149293523267" type="hero">
@@ -76,6 +90,476 @@
                 <action id="4" name="Set animation" sid="1520146691253531" type="hero">
                     <param id="0" name="Animation">&quot;WalkSide&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4134452721196298">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3356977858629922" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="3189562729220085" type="enemy1">
+                    <param id="0" name="Instance variable">playerSpotted</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="8010850531583825" type="enemy1">
+                    <param id="0" name="X">hero.X</param>
+                    <param id="1" name="Y">hero.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="5990018013955896" type="enemy1">
+                    <param id="0" name="Instance variable">savedX</param>
+                    <param id="1" name="Value">enemy1.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="3845774729395448" type="enemy1">
+                    <param id="0" name="Instance variable">savedY</param>
+                    <param id="1" name="Value">enemy1.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="47961432280894">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="3175650159782435" type="enemy1" />
+                <condition id="-8" name="Is boolean instance variable set" sid="3904308478465635" type="enemy1">
+                    <param id="0" name="Instance variable">allowMove</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="2837251834156231" type="enemy1" />
+            </actions>
+        </event-block>
+        <event-block sid="3570800959847796">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="4365918721559407" type="enemy1" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="1512168232706509" type="enemy1">
+                    <param id="0" name="Instance variable">playerSpotted</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2465485643526195">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6753999907131751" type="enemy1">
+                    <param id="0" name="Instance variable">savedY</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">enemy1.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7548580770113463" type="enemy1">
+                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="2970338729964865" type="enemy1">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3102799703603726">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1734366200787267" type="enemy1">
+                    <param id="0" name="Instance variable">savedY</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">enemy1.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6802675689171278" type="enemy1">
+                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="9387807571661936" type="enemy1">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7167048172408497">
+            <conditions>
+                <condition id="3" name="On key released" sid="1437325414943062" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="2617139307367518" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6700817219978537" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="8Direction" id="0" name="Stop" sid="6552198551874337" type="hero" />
+                <action id="-3" name="Create object" sid="7922496576490142" type="System">
+                    <param id="0" name="Object to create">playerSwipe</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">hero.X</param>
+                    <param id="3" name="Y">hero.Y - 40</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="6966535716466757" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="4156354430123182" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8404489715557751" type="playerSwipe" />
+                <action id="-13" name="Set boolean" sid="4102001014271682" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4727023675266939">
+            <conditions>
+                <condition id="3" name="On key released" sid="2929705038398767" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="4885769078311541" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6435236665171038" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="8Direction" id="0" name="Stop" sid="4798334497083932" type="hero" />
+                <action id="-3" name="Create object" sid="5861599448336971" type="System">
+                    <param id="0" name="Object to create">playerSwipe</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">hero.X - 40</param>
+                    <param id="3" name="Y">hero.Y</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="9492698195391752" type="playerSwipe">
+                    <param id="0" name="Degrees">90</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="2960818762742511" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="4658095725711885" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2551855119213989" type="playerSwipe" />
+                <action id="-13" name="Set boolean" sid="9775191310247375" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4534122987192707">
+            <conditions>
+                <condition id="3" name="On key released" sid="8559134671699605" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="1109481861526853" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="7014127578605367" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="8Direction" id="0" name="Stop" sid="5169853173492684" type="hero" />
+                <action id="-3" name="Create object" sid="1783379465982332" type="System">
+                    <param id="0" name="Object to create">playerSwipe</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">hero.X</param>
+                    <param id="3" name="Y">hero.Y + 40</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="5308533362205485" type="playerSwipe">
+                    <param id="0" name="Degrees">180</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="2589907866539678" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="9270673508729196" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="250408933894431" type="playerSwipe" />
+                <action id="-13" name="Set boolean" sid="6000109422194055" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6283566809072353">
+            <conditions>
+                <condition id="3" name="On key released" sid="6203069703230301" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="953902400318023" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="1039322229326523" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="8Direction" id="0" name="Stop" sid="1693017243987558" type="hero" />
+                <action id="-3" name="Create object" sid="1665922695091523" type="System">
+                    <param id="0" name="Object to create">playerSwipe</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">hero.X + 40</param>
+                    <param id="3" name="Y">hero.Y</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="2140312993767963" type="playerSwipe">
+                    <param id="0" name="Degrees">-90</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="5577353518981907" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="1001074691066789" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4237482536251723" type="playerSwipe" />
+                <action id="-13" name="Set boolean" sid="5275322998442712" type="hero">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8405137751104702">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6093982016557985" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3014352685611551">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9858484566943569" type="enemy1">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4789986544318937" type="enemy1" />
+                    </actions>
+                </event-block>
+                <event-block sid="6407102597609171">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3141714193183404" type="System">
+                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-9" name="Destroy" sid="1663403447791181" type="hero" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2774011593489698">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3051149268843901" type="playerSwipe">
+                    <param id="0" name="Object">enemy1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="5106408298010867" type="enemy1">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="979188718246665">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7950299770861685" type="System">
+                    <param id="0" name="Interval (seconds)">playerAS</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3735827719273525" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="1072208171254428" type="hero">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9379571298984516">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="575383078878109" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7474584156791857" type="enemy1">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="2425162282033467" type="enemy1">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="8727999769288576">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3290294546813791" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="6221888476195127">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6536282530517335" type="enemy1">
+                            <param id="0" name="Instance variable">speedBoost</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="4625544771429028" type="enemy1">
+                            <param id="0" name="Instance variable">speedBoost</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="1810378441636412">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="9772883842226657" type="enemy1">
+                            <param id="0" name="Instance variable">speedBoost</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="6817725874536311" type="enemy1">
+                            <param id="0" name="Instance variable">speedBoost</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="2106905486988134">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="8966775096183541" type="enemy1">
+                    <param id="0" name="Instance variable">speedBoost</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="663657260190185" type="enemy1">
+                    <param id="0" name="Speed">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="8458006400802397">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8217242318880857" type="enemy1">
+                    <param id="0" name="Instance variable">speedBoost</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="5377843949205209" type="enemy1">
+                    <param id="0" name="Speed">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1274853575690441">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="2104038793460705" type="enemy1">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="617924190956741" type="hero">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">enemy1.X+100</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="3997449309890735" type="hero">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">enemy1.X</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7932800166639763" type="hero">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">enemy1.Y - 52</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="4295595876620043" type="hero">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">enemy1.Y + 52</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="9638927000287812" type="enemy1">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4920265960661943" type="enemy1">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Pathfinding" id="2" name="Stop" sid="5847905818493266" type="enemy1" />
+                <action id="-3" name="Create object" sid="485954164753981" type="System">
+                    <param id="0" name="Object to create">enemySwipe</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">enemy1.X + 40</param>
+                    <param id="3" name="Y">enemy1.Y</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="5875110210513858" type="enemySwipe">
+                    <param id="0" name="Degrees">-90</param>
+                </action>
+                <action id="-16" name="Wait" sid="8582632552559371" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3247219715509804" type="enemySwipe" />
+                <action id="-13" name="Set boolean" sid="3816223807462444" type="enemy1">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2212430717146326">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="2013057101974842" type="enemy1">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="1354090684621877" type="hero">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">enemy1.X-100</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="2565304303215211" type="hero">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">enemy1.X</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="5281121087660302" type="hero">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">enemy1.Y - 52</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7873172049584452" type="hero">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">enemy1.Y + 52</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="8100014296327538" type="enemy1">
+                    <param id="0" name="Instance variable">allowAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8672592754721473" type="enemy1">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Pathfinding" id="2" name="Stop" sid="4042798904825158" type="enemy1" />
+                <action id="-3" name="Create object" sid="628537046306478" type="System">
+                    <param id="0" name="Object to create">enemySwipe</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">enemy1.X - 40</param>
+                    <param id="3" name="Y">enemy1.Y</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="2982266456078369" type="enemySwipe">
+                    <param id="0" name="Degrees">-90</param>
+                </action>
+                <action id="-16" name="Wait" sid="7473715077701524" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3042956150775642" type="enemySwipe" />
+                <action id="-13" name="Set boolean" sid="8828018194773103" type="enemy1">
+                    <param id="0" name="Instance variable">allowMove</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
