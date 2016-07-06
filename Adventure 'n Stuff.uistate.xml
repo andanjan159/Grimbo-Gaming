@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Hub World</layout>
-        <layout order="4">Sub 2</layout>
         <layout active="1" order="2">Sub1</layout>
+        <layout order="4">Sub 2</layout>
         <layout order="6">Sub 3</layout>
         <layout order="8">Sub 4</layout>
         <event-sheet order="1">Hub Events</event-sheet>
