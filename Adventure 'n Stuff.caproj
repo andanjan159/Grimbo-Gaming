@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Adventure &apos;n Stuff</name>
     <description></description>
@@ -11,6 +11,7 @@
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -603,6 +604,190 @@
             <plugin id="TiledBg" />
             <texture original-source="D:\Final\Grimbo-Gaming\liquidLava.png" />
         </object-type>
+        <object-type name="TitleBackground" sid="4844446273754112">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4469891082565311" speed="5">
+                    <frame duration="1" hotspotX="0.501901" hotspotY="0.502618" original-source="D:\Final Project\3a7058ed09b63a36b5730eb72567e1a3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Title" sid="5126332191837307">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="196273745269554">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1067269761582454" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GimboGaming" sid="9702389521934511">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="StartButton" sid="7621478629926469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9238318525859016" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.535999" />
+                            <point x="0" y="0.535999" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Start" sid="8871687494983745">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="9787963540453592">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Controlls" sid="7350092455360202">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controlbutton" sid="6535585294057992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6954169365074981" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FakeHero" sid="9490684205290479">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="8736577989151399">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3206142929193414">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="2718735627379073" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="5273142205498506" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="6689657992429516" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="4449783903274512" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="AttackUp" pingpong="0" repeatcount="1" repeatto="0" sid="1528959537941671" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="AttackSide" pingpong="0" repeatcount="1" repeatto="0" sid="3310632168260048" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="AttackDown" pingpong="0" repeatcount="1" repeatto="0" sid="9645128186340612" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="3197438465058482">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3309246475752336" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="8649007875323207">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6441778809234182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final Project\Grimbo-Gaming\Controlls.png">
+                        <collision-poly>
+                            <point x="0.26236" y="0.395014" />
+                            <point x="0.801772" y="0.298455" />
+                            <point x="0.726912" y="0.588834" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Or" sid="1071827513436411">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Back" sid="9380683657919316">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MainChest" sid="7034317242090549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9001688981938046" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final Project\Grimbo-Gaming\Main Chest.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.320313" />
+                            <point x="0.430556" y="0.320313" />
+                            <point x="0.861111" y="0.5" />
+                            <point x="0.5" y="0.71875" />
+                            <point x="0.5" y="0.71875" />
+                            <point x="0.152778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="forest" sid="9477543616073786">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7458516457340683" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500888" original-source="D:\Final Project\Grimbo-Gaming\forest.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="endingJokeText" sid="8573506262392749">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RealEndingText" sid="9979957541344181">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MainMenu" sid="1586741612691863">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite4" sid="7086420612167319">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9199829771660192" speed="5">
+                    <frame duration="1" hotspotX="0.500835" hotspotY="0.502058" original-source="D:\Final Project\Grimbo-Gaming\arow.png">
+                        <collision-poly>
+                            <point x="0.113523" y="0.279835" />
+                            <point x="0.499165" y="0.390947" />
+                            <point x="0.841402" y="0.390947" />
+                            <point x="1" y="0.497942" />
+                            <point x="0.843072" y="0.613169" />
+                            <point x="0.499165" y="0.613169" />
+                            <point x="0.113523" y="0.720165" />
+                            <point x="0" y="0.497942" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -614,6 +799,9 @@
         </layout-folder>
         <layout>Hub World.xml</layout>
         <layout>Test.xml</layout>
+        <layout>Title Page.xml</layout>
+        <layout>Control Layout.xml</layout>
+        <layout>Conclusion.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Sub events">
@@ -624,9 +812,13 @@
         </event-folder>
         <event-sheet>Hub Events.xml</event-sheet>
         <event-sheet>Dungeon Generator.xml</event-sheet>
+        <event-sheet>Title Page Event.xml</event-sheet>
+        <event-sheet>Control Layout Event.xml</event-sheet>
+        <event-sheet>Conclusion Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Mouse" uid="26" />
     </global-instances>
     <sounds-folder />
     <music-folder />
