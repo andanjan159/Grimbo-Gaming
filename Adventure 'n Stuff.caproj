@@ -202,25 +202,9 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="4458363822623195">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916964338064717" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\Final\Grimbo-Gaming\expand wrong.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="ground" sid="1735126284935672">
             <plugin id="TiledBg" />
             <texture original-source="D:\Final\Grimbo-Gaming\Grass_double.jpg" />
-        </object-type>
-        <object-type name="Sprite2" sid="364748119587308">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3899150897728825" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="enemy4" sid="719833332836481">
             <plugin id="Sprite" />
@@ -342,6 +326,15 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="554177307090763">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8652622180983443">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Tiles\snowCenter.png" />
         </object-type>
     </object-folder>
     <families />
