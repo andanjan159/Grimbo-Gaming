@@ -88,19 +88,22 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="5226021938853825" type="blueKey" />
-            </actions>
-        </event-block>
-        <event-block sid="3370552201881337">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="9382807415602611" type="blueKey" />
-            </conditions>
-            <actions>
                 <action id="-10" name="Add to" sid="6268156653074086" type="System">
                     <param id="0" name="Variable">keyPoints</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Set text" sid="7865511572701402" type="keyAmount">
                     <param id="0" name="Text">&quot;Keys: &quot; &amp; keyPoints</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2875387805874831">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3336153637558148" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2963150854553337" type="keyAmount">
+                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
                 </action>
             </actions>
         </event-block>
