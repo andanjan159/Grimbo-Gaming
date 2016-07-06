@@ -110,10 +110,10 @@
         <event-block any="1" sid="5900663901110389">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8813533808066787" type="hero">
-                    <param id="0" name="Object">cave1DoorBottom</param>
+                    <param id="0" name="Object">caveDoorBottom</param>
                 </condition>
                 <condition id="0" name="On collision with another object" sid="6025651180445989" type="hero">
-                    <param id="0" name="Object">cave1DoorTop</param>
+                    <param id="0" name="Object">caveDoorTop</param>
                 </condition>
             </conditions>
             <actions>

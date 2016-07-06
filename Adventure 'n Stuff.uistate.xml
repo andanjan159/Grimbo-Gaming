@@ -14,7 +14,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">Sub 2</layout>
         <layout order="2">Sub1</layout>
         <event-sheet order="1">Hub Events</event-sheet>
-        <event-sheet active="1" order="3">Sub 1 Events</event-sheet>
+        <event-sheet order="3">Sub 1 Events</event-sheet>
+        <event-sheet active="1" order="5">Sub 2 Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -45,7 +46,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/enemy7/" />
         <folder expanded="1" path="animation-folder/hole/" />
         <folder expanded="1" path="animation-folder/blueKey/" />
-        <folder expanded="1" path="animation-folder/cave1DoorBottom/" />
-        <folder expanded="1" path="animation-folder/cave1DoorTop/" />
+        <folder expanded="1" path="animation-folder/caveDoorBottom/" />
+        <folder expanded="1" path="animation-folder/caveDoorTop/" />
+        <folder expanded="1" path="animation-folder/greenKey/" />
     </folders-expanded>
 </c2uistate>

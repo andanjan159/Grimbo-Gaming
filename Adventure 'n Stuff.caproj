@@ -364,7 +364,7 @@
         <object-type name="keyAmount" sid="9105772461297621">
             <plugin id="Text" />
         </object-type>
-        <object-type name="cave1DoorBottom" sid="4155848406889386">
+        <object-type name="caveDoorBottom" sid="4155848406889386">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5409578587532328" speed="5">
@@ -372,7 +372,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="cave1DoorTop" sid="7657369235409177">
+        <object-type name="caveDoorTop" sid="7657369235409177">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7654232926255732" speed="5">
@@ -384,6 +384,30 @@
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenKey" sid="5750354751177842">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8513344780208592">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5648547603960876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyGreen.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -4,8 +4,8 @@
     <sid>7067128639713212</sid>
     <event-sheet>Sub 1 Events</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1698</width>
+        <height>961</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -200,7 +200,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cave1DoorBottom" uid="22">
+                <instance type="caveDoorBottom" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -222,7 +222,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cave1DoorTop" uid="23">
+                <instance type="caveDoorTop" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
