@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dungeon Generator</name>
     <events>
+        <include>Hub Events</include>
         <variable constant="0" name="genY" sid="4456172668652299" static="0" type="number">0</variable>
         <variable constant="0" name="genX" sid="7167374905454071" static="0" type="number">0</variable>
         <variable constant="0" name="door2" sid="3678798945302068" static="0" type="number">0</variable>
@@ -21,6 +22,12 @@
                 <action id="-9" name="Set value" sid="6467941926013131" type="System">
                     <param id="0" name="Variable">door2</param>
                     <param id="1" name="Value">random(0,3)</param>
+                </action>
+                <action disabled="1" id="-3" name="Create object" sid="9506374142176612" type="System">
+                    <param id="0" name="Object to create">Wall</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">dunX + DungeonObject.sizeRoomX*64</param>
+                    <param id="3" name="Y">dunY + DungeonObject.sizeRoomY*64</param>
                 </action>
             </actions>
             <sub-events>
@@ -50,21 +57,21 @@
                 <event-block sid="4123160173662728">
                     <conditions>
                         <condition id="-12" name="Repeat" sid="7279696462503891" type="System">
-                            <param id="0" name="Count">DungeonObject.sizeRoomX</param>
+                            <param id="0" name="Count">(DungeonObject.sizeRoomX)/2 -1</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="5071715084097072" type="System">
                             <param id="0" name="Object to create">Wall</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">genX*64</param>
-                            <param id="3" name="Y">0</param>
+                            <param id="2" name="X">dunX + genX*64</param>
+                            <param id="3" name="Y">dunY</param>
                         </action>
                         <action id="-3" name="Create object" sid="4930380269272565" type="System">
                             <param id="0" name="Object to create">Wall</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">genX*64</param>
-                            <param id="3" name="Y">DungeonObject.sizeRoomY*64</param>
+                            <param id="2" name="X">dunX + genX*64</param>
+                            <param id="3" name="Y">dunY + DungeonObject.sizeRoomY*64</param>
                         </action>
                         <action id="-10" name="Add to" sid="2937357961666552" type="System">
                             <param id="0" name="Variable">genX</param>
@@ -75,15 +82,25 @@
                 <event-block sid="8662346808860276">
                     <conditions>
                         <condition id="-12" name="Repeat" sid="2115293196941096" type="System">
-                            <param id="0" name="Count">DungeonObject.sizeRoomY</param>
+                            <param id="0" name="Count">(DungeonObject.sizeRoomY)/2 -1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="8742918036244221" type="System">
+                        <action disabled="1" id="-3" name="Create object" sid="8742918036244221" type="System">
                             <param id="0" name="Object to create">Wall</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">genX*64</param>
-                            <param id="3" name="Y">0</param>
+                            <param id="2" name="X">dunX</param>
+                            <param id="3" name="Y">dunY + genY*64</param>
+                        </action>
+                        <action disabled="1" id="-3" name="Create object" sid="8004275848934342" type="System">
+                            <param id="0" name="Object to create">Wall</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">dunX + DungeonObject.sizeRoomX*64</param>
+                            <param id="3" name="Y">dunY + genY*64</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="8746292820216947" type="System">
+                            <param id="0" name="Variable">genY</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
