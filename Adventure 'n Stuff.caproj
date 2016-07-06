@@ -17,6 +17,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -170,17 +171,139 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="4458363822623195">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916964338064717" speed="5">
-                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\Final\Grimbo-Gaming\expand wrong.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="ground" sid="1735126284935672">
             <plugin id="TiledBg" />
             <texture original-source="D:\Final\Grimbo-Gaming\Grass_double.jpg" />
+        </object-type>
+        <object-type name="enemy4" sid="719833332836481">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="8819099862122087" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="8443279578975252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="8941638052442928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="7050248732573924" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy5" sid="200504174955859">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="2980344382215516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="28643038972161" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="9178182374839987" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="1192376047077389" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy6" sid="5336845062650996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="2186503207914002" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="6170514841793526" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="269237867385151" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="828847000153735" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.510204" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy7" sid="6416726107881978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="1001936961104782" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="2989533778730615" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkSide" pingpong="0" repeatcount="1" repeatto="0" sid="8975381913254204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="1848235417501368" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caveGround" sid="1182212945963252">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Tiles\castleCenter.png" />
+        </object-type>
+        <object-type name="hole" sid="119800789132568">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2064499705140217">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1764777948315005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="554177307090763">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8652622180983443">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Tiles\snowCenter.png" />
         </object-type>
     </object-folder>
     <families />
