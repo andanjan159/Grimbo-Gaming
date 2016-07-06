@@ -49,6 +49,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="lava" uid="57">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -101,8 +121,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
-                        <y>128</y>
+                        <x>128</x>
+                        <y>64</y>
                         <z>0</z>
                         <width>79.688766479</width>
                         <height>103.941871643</height>
@@ -174,8 +194,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
-                        <y>160</y>
+                        <x>1664</x>
+                        <y>480</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>

@@ -508,6 +508,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="lava" sid="6797314556359991">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Final\Grimbo-Gaming\liquidLava.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

@@ -121,5 +121,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2935182594015298">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7801683311159539" type="hero">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8784813991418467" type="hero" />
+            </actions>
+        </event-block>
+        <event-block sid="814796523690257">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="308108009360914" type="enemy1">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8384263648253975" type="enemy1" />
+            </actions>
+        </event-block>
+        <event-block sid="5038081511601963">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2489491056261177" type="enemy4">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9726426769820612" type="enemy4" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
