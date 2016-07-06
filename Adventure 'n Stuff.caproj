@@ -413,12 +413,62 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="redKey" sid="4145614008726275">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6157829212297082">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9820401288244722" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyRed.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yellowKey" sid="3661443005539314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3122631361197888">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6875999284915242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyYellow.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout-folder name="Sub levels">
             <layout>Sub1.xml</layout>
             <layout>Sub 2.xml</layout>
+            <layout>Sub 3.xml</layout>
+            <layout>Sub 4.xml</layout>
         </layout-folder>
         <layout>Hub World.xml</layout>
         <layout>Test.xml</layout>
@@ -427,6 +477,8 @@
         <event-folder name="Sub events">
             <event-sheet>Sub 1 Events.xml</event-sheet>
             <event-sheet>Sub 2 Events.xml</event-sheet>
+            <event-sheet>Sub 3 Events.xml</event-sheet>
+            <event-sheet>Sub 4 Events.xml</event-sheet>
         </event-folder>
         <event-sheet>Hub Events.xml</event-sheet>
         <event-sheet>Dungeon Generator.xml</event-sheet>

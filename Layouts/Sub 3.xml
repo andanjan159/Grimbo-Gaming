@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Sub 2</name>
-    <sid>5977456902063527</sid>
-    <event-sheet>Sub 2 Events</event-sheet>
+    <name>Sub 3</name>
+    <sid>4800571543112061</sid>
+    <event-sheet>Sub 3 Events</event-sheet>
     <size>
         <width>1698</width>
         <height>961</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Backgorund" sid="366509211623217">
+        <layer name="Background" sid="6883924817880887">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="caveGround" uid="24">
+                <instance type="caveGround" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -52,7 +52,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Main" sid="1921952326406149">
+        <layer name="Main" sid="2883946575690378">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -68,7 +68,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="hero" uid="25">
+                <instance type="hero" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -102,7 +102,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>192</x>
-                        <y>128</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>79.688766479</width>
                         <height>103.941871643</height>
@@ -113,18 +113,25 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="caveDoorTop" uid="26">
+                <instance type="redKey" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>32</y>
+                        <x>672</x>
+                        <y>192</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -135,7 +142,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="caveDoorBottom" uid="27">
+                <instance type="caveDoorBottom" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -157,25 +164,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="greenKey" uid="28">
+                <instance type="caveDoorTop" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
-                        <y>160</y>
+                        <x>32</x>
+                        <y>32</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -189,7 +189,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="HUD" sid="522507022506284">
+        <layer name="HUD" sid="8758332699841714">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -205,7 +205,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="keyAmount" uid="29">
+                <instance type="keyAmount" uid="35">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
