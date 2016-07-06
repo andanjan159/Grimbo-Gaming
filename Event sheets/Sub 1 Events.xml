@@ -3,83 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Sub 1 Events</name>
     <events>
+        <include>Hub Events</include>
         <variable comment="shows how many keys the player has collected" constant="0" name="keyPoints" sid="3015225669801405" static="0" type="number">0</variable>
-        <event-block sid="7834809243662736">
-            <conditions>
-                <condition id="2" name="Key is down" sid="7371921366660651" type="Keyboard">
-                    <param id="0" name="Key">87 (W)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="6688342047117071" type="hero">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="9113268750294774" type="hero">
-                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="9836057567018714" type="hero">
-                    <param id="0" name="Control">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="425012135596089">
-            <conditions>
-                <condition id="2" name="Key is down" sid="9280141573335907" type="Keyboard">
-                    <param id="0" name="Key">65 (A)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="8753865668249562" type="hero">
-                    <param id="0" name="Control">0</param>
-                </action>
-                <action id="4" name="Set animation" sid="9424266151186053" type="hero">
-                    <param id="0" name="Animation">&quot;WalkSide&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="6496163362696974" type="hero">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8574622143282251">
-            <conditions>
-                <condition id="2" name="Key is down" sid="4470322664207423" type="Keyboard">
-                    <param id="0" name="Key">83 (S)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="8056185810380632" type="hero">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="2628629795882293" type="hero">
-                    <param id="0" name="Control">3</param>
-                </action>
-                <action id="4" name="Set animation" sid="8991511330782336" type="hero">
-                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2162891570419569">
-            <conditions>
-                <condition id="2" name="Key is down" sid="4201798911606246" type="Keyboard">
-                    <param id="0" name="Key">68 (D)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="5521891684097042" type="hero">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="6445888668254524" type="hero">
-                    <param id="0" name="Control">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="4649451232232309" type="hero">
-                    <param id="0" name="Animation">&quot;WalkSide&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="3499315391378749">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="7495895363585786" type="hero">
