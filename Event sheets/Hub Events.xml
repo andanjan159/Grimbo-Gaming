@@ -328,7 +328,11 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="6093982016557985" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Set text" sid="1411531143773203" type="Health">
+                    <param id="0" name="Text">&quot;Health: &quot; &amp; playerHealth</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="3014352685611551">
                     <conditions>
@@ -352,6 +356,18 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="1663403447791181" type="hero" />
+                    </actions>
+                </event-block>
+                <event-block sid="3379861291199015">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2912997865772607" type="enemy4">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1421977145309674" type="enemy4" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -758,6 +774,71 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="5910704784830421" type="System">
                     <param id="0" name="Layout">Sub 4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="868056047955152">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="527719189894155" type="System">
+                    <param id="0" name="Interval (seconds)">enemy4.attackSpeed</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="803773484431728" type="enemy4" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3406343480267516" type="System">
+                    <param id="0" name="Object to create">enemySphere</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">enemy4.X</param>
+                    <param id="3" name="Y">enemy4.Y</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="7827358696427459" type="enemySphere">
+                    <param id="0" name="X">hero.X</param>
+                    <param id="1" name="Y">hero.Y</param>
+                </action>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="6835353636768812" type="enemySphere">
+                    <param id="0" name="Speed">800</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="8316928487917824" type="enemySphere" />
+            </actions>
+        </event-block>
+        <event-block sid="9114424927555185">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="8413082007766167" type="enemySphere" />
+                <condition id="-1" name="Compare X" sid="3078418422034962" type="enemySphere">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">hero.X+100</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="5145454790532853" type="enemySphere">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">hero.X - 100</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="993892376689442" type="enemySphere">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">hero.Y+100</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="951048159268517" type="enemySphere">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">hero.Y - 100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="8529304328751762" type="System">
+                    <param id="0" name="Variable">playerHealth</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="374847879517651" type="enemySphere" />
+            </actions>
+        </event-block>
+        <event-block sid="8289899787475535">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4115530421623407" type="enemy4">
+                    <param id="0" name="Object">playerSwipe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="8610236689005845" type="enemy4">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

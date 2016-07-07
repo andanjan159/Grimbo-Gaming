@@ -4,18 +4,6 @@
     <name>Sub 3 Events</name>
     <events>
         <include>Hub Events</include>
-        <event-block sid="2536464354369421">
-            <conditions />
-            <actions>
-                <action id="-10" name="Add to" sid="2393537957214535" type="System">
-                    <param id="0" name="Variable">keyPoints</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="0" name="Set text" sid="4098244042407487" type="keyAmount">
-                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="2075082731779585">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="6979803086271231" type="System" />
@@ -145,18 +133,21 @@
                 <action id="-9" name="Destroy" sid="1410504426921475" type="greenLock" />
             </actions>
         </event-block>
-        <event-block sid="2030497370756843">
+        <event-block sid="3913323325890476">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="238774399161548" type="hero">
+                <condition id="0" name="On collision with another object" sid="8264766977039237" type="hero">
                     <param id="0" name="Object">keys</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Add to" sid="8625831350430003" type="System">
+                <action id="-10" name="Add to" sid="7473469283497046" type="System">
                     <param id="0" name="Variable">keyPoints</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="7525301892505476" type="keys" />
+                <action id="-9" name="Destroy" sid="9779714201626733" type="keys" />
+                <action id="0" name="Set text" sid="2701376574105839" type="keyAmount">
+                    <param id="0" name="Text">&quot;Keys: &quot;&amp;keyPoints</param>
+                </action>
             </actions>
         </event-block>
     </events>

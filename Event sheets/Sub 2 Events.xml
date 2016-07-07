@@ -4,28 +4,6 @@
     <name>Sub 2 Events</name>
     <events>
         <include>Hub Events</include>
-        <event-block sid="1538004475988995">
-            <conditions />
-            <actions>
-                <action id="-10" name="Add to" sid="4677226113367531" type="System">
-                    <param id="0" name="Variable">keyPoints</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="0" name="Set text" sid="488048585324481" type="keyAmount">
-                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6149137185311362">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="1924948633555469" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="200626261654642" type="keyAmount">
-                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block any="1" sid="2463681145823779">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="985165446493757" type="hero">
@@ -83,6 +61,9 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="7380169983032098" type="keys" />
+                <action id="0" name="Set text" sid="1026180680267451" type="keyAmount">
+                    <param id="0" name="Text">&quot;Keys: &quot;&amp;keyPoints</param>
+                </action>
             </actions>
         </event-block>
     </events>

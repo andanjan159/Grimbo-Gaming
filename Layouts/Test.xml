@@ -8886,7 +8886,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemy1" uid="535">
+                <instance type="enemySphere" uid="563">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -8894,13 +8894,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <savedX>0</savedX>
-                        <savedY>0</savedY>
-                        <playerSpotted>false</playerSpotted>
-                        <health>1</health>
-                        <allowAttack>false</allowAttack>
-                        <allowMove>true</allowMove>
-                        <speedBoost>true</speedBoost>
+                        <alive>true</alive>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -8912,7 +8906,7 @@
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
                                 <rotate-speed>135</rotate-speed>
-                                <rotate-object>No</rotate-object>
+                                <rotate-object>Yes</rotate-object>
                                 <diagonals>Enabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -8921,11 +8915,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>768</x>
-                        <y>384</y>
+                        <x>13</x>
+                        <y>-109</y>
                         <z>0</z>
-                        <width>79.689002991</width>
-                        <height>103.942001343</height>
+                        <width>96</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -8933,7 +8927,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemy1" uid="536">
+                <instance type="enemy4" uid="504">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -8941,34 +8935,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <savedX>0</savedX>
-                        <savedY>0</savedY>
-                        <playerSpotted>false</playerSpotted>
-                        <health>1</health>
-                        <allowAttack>false</allowAttack>
-                        <allowMove>true</allowMove>
-                        <speedBoost>true</speedBoost>
+                        <attackSpeed>1</attackSpeed>
+                        <health>0</health>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>-1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
+                        <x>224</x>
                         <y>160</y>
                         <z>0</z>
                         <width>79.689002991</width>
@@ -9036,7 +9009,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
+                        <x>64</x>
                         <y>160</y>
                         <z>0</z>
                         <width>79.688766479</width>
@@ -9228,53 +9201,6 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="enemy1" uid="504">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <savedX>0</savedX>
-                        <savedY>0</savedY>
-                        <playerSpotted>false</playerSpotted>
-                        <health>1</health>
-                        <allowAttack>false</allowAttack>
-                        <allowMove>true</allowMove>
-                        <speedBoost>true</speedBoost>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>-1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>576</x>
-                        <y>480</y>
-                        <z>0</z>
-                        <width>79.689002991</width>
-                        <height>103.942001343</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -9532,7 +9458,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-32</x>
+                        <x>-64</x>
                         <y>-128</y>
                         <z>0</z>
                         <width>100</width>
@@ -9554,7 +9480,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
+                        <x>64</x>
                         <y>-128</y>
                         <z>0</z>
                         <width>100</width>
@@ -9562,6 +9488,33 @@
                         <depth>0</depth>
                         <hotspotX>0.507324219</hotspotX>
                         <hotspotY>0.558105469</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Health" uid="535">
+                    <properties>
+                        <text>Health</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

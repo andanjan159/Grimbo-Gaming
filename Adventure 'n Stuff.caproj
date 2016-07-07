@@ -276,6 +276,10 @@
         </object-type>
         <object-type name="enemy4" sid="719833332836481">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="attackSpeed" sid="5523986566963875" type="number" />
+                <instance-variable name="health" sid="3261088849032225" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="8819099862122087" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -947,6 +951,40 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\Animations\caveDoorBottom\Default\000.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="enemySphere" sid="9027095327228913">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="alive" sid="2206701223835073" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="5337066028540623">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8925925286249801" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.336" y="0.388" />
+                            <point x="0.572" y="0.388" />
+                            <point x="0.588" y="0.639999" />
+                            <point x="0.352" y="0.643999" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="5649641470913065">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2813605813015778" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Health" sid="2882764641060562">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
