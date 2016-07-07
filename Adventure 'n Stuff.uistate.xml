@@ -10,10 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Hub World</layout>
+        <layout active="1" order="0">Hub World</layout>
         <layout order="2">Sub1</layout>
         <layout order="4">Sub 2</layout>
-        <layout active="1" order="6">Sub 3</layout>
+        <layout order="6">Sub 3</layout>
         <layout order="8">Sub 4</layout>
         <layout order="10">Title Page</layout>
         <layout order="12">Control Layout</layout>
@@ -84,5 +84,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/whiteSwitch/" />
         <folder expanded="1" path="animation-folder/greenButton/" />
         <folder expanded="1" path="animation-folder/greenLock/" />
+        <folder expanded="1" path="animation-folder/cave1Door/" />
+        <folder expanded="1" path="animation-folder/cave2Door/" />
+        <folder expanded="1" path="animation-folder/cave3Door/" />
+        <folder expanded="1" path="animation-folder/cave4Door/" />
     </folders-expanded>
 </c2uistate>

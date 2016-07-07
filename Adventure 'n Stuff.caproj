@@ -932,6 +932,58 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="cave1Door" sid="982338821575116">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7975232867195442">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258827242402331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\Animations\caveDoorBottom\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cave2Door" sid="3398784238756443">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2808703659280139">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9568055156702519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\Animations\caveDoorBottom\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cave3Door" sid="1233463115084796">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3059222037069873">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2697505093310557" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\Animations\caveDoorBottom\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cave4Door" sid="7842001958501173">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="560536375455755">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8456713787232244" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\Animations\caveDoorBottom\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
