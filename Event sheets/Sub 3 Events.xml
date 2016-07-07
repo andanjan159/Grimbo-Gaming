@@ -76,5 +76,68 @@
                 <action id="-9" name="Destroy" sid="700121747875029" type="enemy4" />
             </actions>
         </event-block>
+        <event-block sid="6336216269483853">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="446807659029001" type="hero">
+                    <param id="0" name="Object">blackSwitch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2566998865938051" type="blueBlock">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="1352008858234928" type="blueBlock">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="1706140962875549" type="greenBlock">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="5606194868882555" type="greenBlock">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1936578621858433">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1130067993904918" type="hero">
+                    <param id="0" name="Object">greySwitch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6318636926105828" type="greenBlock">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="1813651747728822" type="greenBlock">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="9981055020684705" type="purpleBlock">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="5800017669766825" type="purpleBlock">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8990761967064331">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5536363105512645" type="hero">
+                    <param id="0" name="Object">whiteSwitch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="596757132675495" type="purpleBlock">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="8797000899521973" type="purpleBlock">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="8325558184961848" type="blueBlock">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="5410472247423429" type="blueBlock">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TitleBackground" uid="20">
+                <instance type="TitleBackground" uid="514">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="22">
+                <instance type="Sprite" uid="515">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -92,7 +92,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Controlbutton" uid="29">
+                <instance type="Controlbutton" uid="516">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -114,7 +114,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="FakeHero" uid="27">
+                <instance type="FakeHero" uid="517">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -173,7 +173,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Title" uid="21">
+                <instance type="Title" uid="518">
                     <properties>
                         <text>Expand World</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -200,7 +200,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GimboGaming" uid="23">
+                <instance type="GimboGaming" uid="519">
                     <properties>
                         <text>By Gimbo Gaming</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -227,7 +227,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="StartButton" uid="24">
+                <instance type="StartButton" uid="520">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -249,7 +249,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Start" uid="25">
+                <instance type="Start" uid="521">
                     <properties>
                         <text>Start</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -276,7 +276,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controlls" uid="28">
+                <instance type="Controlls" uid="522">
                     <properties>
                         <text>Controlls</text>
                         <initial-visibility>Visible</initial-visibility>

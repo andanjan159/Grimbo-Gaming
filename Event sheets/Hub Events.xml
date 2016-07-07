@@ -703,5 +703,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="3125541989245041">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9836214629547178" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1605802356992285" type="keyAmount">
+                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

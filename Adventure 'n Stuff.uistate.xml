@@ -10,7 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Hub World</layout>
+        <layout active="1" order="1">Hub World</layout>
         <layout order="3">Sub1</layout>
         <layout order="5">Sub 2</layout>
         <layout order="7">Sub 3</layout>
@@ -19,7 +19,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="13">Control Layout</layout>
         <layout order="15">Conclusion</layout>
         <layout order="17">Test</layout>
-        <event-sheet active="1" order="2">Hub Events</event-sheet>
+        <event-sheet order="2">Hub Events</event-sheet>
         <event-sheet order="4">Sub 1 Events</event-sheet>
         <event-sheet order="6">Sub 2 Events</event-sheet>
         <event-sheet order="8">Sub 3 Events</event-sheet>
@@ -76,5 +76,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/playerSwipe/" />
         <folder expanded="1" path="animation-folder/enemySwipe/" />
+        <folder expanded="1" path="animation-folder/greenBlock/" />
+        <folder expanded="1" path="animation-folder/blueBlock/" />
+        <folder expanded="1" path="animation-folder/purpleBlock/" />
+        <folder expanded="1" path="animation-folder/blackSwitch/" />
+        <folder expanded="1" path="animation-folder/greySwitch/" />
+        <folder expanded="1" path="animation-folder/whiteSwitch/" />
     </folders-expanded>
 </c2uistate>
