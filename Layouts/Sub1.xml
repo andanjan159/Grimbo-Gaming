@@ -331,7 +331,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="blueKey" uid="20">
+                <instance type="keys" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

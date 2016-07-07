@@ -404,7 +404,7 @@
             </behaviors>
             <texture original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Tiles\snowCenter.png" />
         </object-type>
-        <object-type name="blueKey" sid="2501016891295883">
+        <object-type name="keys" sid="2501016891295883">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="7382512106559127">
@@ -412,8 +412,44 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1266613515949444" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyBlue.png">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1266613515949444" speed="0">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyBlue.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\keyGreen.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\keyRed.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\keyYellow.png">
                         <collision-poly>
                             <point x="0.214286" y="0.214286" />
                             <point x="0.5" y="0.385714" />
@@ -451,78 +487,6 @@
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0.171429" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="greenKey" sid="5750354751177842">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="8513344780208592">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5648547603960876" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyGreen.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.214286" />
-                            <point x="0.5" y="0.385714" />
-                            <point x="0.614286" y="0.385714" />
-                            <point x="0.914286" y="0.5" />
-                            <point x="0.7" y="0.7" />
-                            <point x="0.5" y="0.528571" />
-                            <point x="0.285714" y="0.714286" />
-                            <point x="0.0714286" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="redKey" sid="4145614008726275">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="6157829212297082">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9820401288244722" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyRed.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.214286" />
-                            <point x="0.5" y="0.385714" />
-                            <point x="0.614286" y="0.385714" />
-                            <point x="0.914286" y="0.5" />
-                            <point x="0.7" y="0.7" />
-                            <point x="0.5" y="0.528571" />
-                            <point x="0.285714" y="0.714286" />
-                            <point x="0.0714286" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="yellowKey" sid="3661443005539314">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="3122631361197888">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6875999284915242" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Base pack\Items\keyYellow.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.214286" />
-                            <point x="0.5" y="0.385714" />
-                            <point x="0.614286" y="0.385714" />
-                            <point x="0.914286" y="0.5" />
-                            <point x="0.7" y="0.7" />
-                            <point x="0.5" y="0.528571" />
-                            <point x="0.285714" y="0.714286" />
-                            <point x="0.0714286" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>

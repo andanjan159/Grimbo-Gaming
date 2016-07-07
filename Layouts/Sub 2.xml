@@ -221,11 +221,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="greenKey" uid="28">
+                <instance type="keys" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -238,8 +238,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
-                        <y>672</y>
+                        <x>96</x>
+                        <y>704</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
