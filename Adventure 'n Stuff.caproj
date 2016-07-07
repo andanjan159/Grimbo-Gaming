@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Adventure &apos;n Stuff</name>
     <description></description>
@@ -19,6 +19,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -691,6 +692,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -770,16 +774,50 @@
         <object-type name="playerSwipe" sid="6255754738059282">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1183704384171235" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1183704384171235" speed="0">
+                    <frame duration="1" hotspotX="0.504883" hotspotY="0.563477" original-source="D:\finalConstructProject\Grimbo-Gaming\whiteSlash.png">
+                        <collision-poly>
+                            <point x="0.442871" y="0.473145" />
+                            <point x="0.5" y="0.459473" />
+                            <point x="0.557129" y="0.472168" />
+                            <point x="0.604492" y="0.53418" />
+                            <point x="0.604492" y="0.627686" />
+                            <point x="0.530274" y="0.627929" />
+                            <point x="0.484375" y="0.627442" />
+                            <point x="0.407226" y="0.627441" />
+                            <point x="0.407226" y="0.522949" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="enemySwipe" sid="9881505330888376">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4409921175725492" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4409921175725492" speed="0">
+                    <frame duration="1" hotspotX="0.507324" hotspotY="0.558105" original-source="D:\finalConstructProject\Grimbo-Gaming\clearSlash.png">
+                        <collision-poly>
+                            <point x="0.473144" y="0.458496" />
+                            <point x="0.518555" y="0.458496" />
+                            <point x="0.566406" y="0.478028" />
+                            <point x="0.595704" y="0.519043" />
+                            <point x="0.596436" y="0.611328" />
+                            <point x="0.409179" y="0.61084" />
+                            <point x="0.408935" y="0.524902" />
+                            <point x="0.428711" y="0.487793" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509766" hotspotY="0.562012" original-source="D:\finalConstructProject\Grimbo-Gaming\whiteSlash.png">
+                        <collision-poly>
+                            <point x="0.447754" y="0.471191" />
+                            <point x="0.5" y="0.459473" />
+                            <point x="0.556641" y="0.471191" />
+                            <point x="0.599121" y="0.520508" />
+                            <point x="0.600098" y="0.623779" />
+                            <point x="0.400879" y="0.624023" />
+                            <point x="0.402832" y="0.531006" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -812,8 +850,8 @@
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="7" />
-        <global-instance type="Mouse" uid="26" />
+        <global-instance type="Keyboard" uid="533" />
+        <global-instance type="Mouse" uid="534" />
     </global-instances>
     <sounds-folder />
     <music-folder />
