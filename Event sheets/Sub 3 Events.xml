@@ -139,5 +139,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2762114092152291">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="853236425169733" type="hero">
+                    <param id="0" name="Object">greenButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6634426617020464" type="greenButton" />
+                <action id="-9" name="Destroy" sid="1410504426921475" type="greenLock" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
