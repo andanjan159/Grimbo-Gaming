@@ -727,6 +727,10 @@
                 <action id="0" name="Set text" sid="1605802356992285" type="keyAmount">
                     <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
                 </action>
+                <action behavior="Pathfinding" id="6" name="Clear obstacles" sid="8126556912953094" type="enemySphere" />
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="2505311039706354" type="enemySphere">
+                    <param id="0" name="Obstacle">wallAntiMagic</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7139042690649579">
@@ -791,14 +795,14 @@
                     <param id="2" name="X">enemy4.X</param>
                     <param id="3" name="Y">enemy4.Y</param>
                 </action>
+                <action behavior="Pathfinding" id="6" name="Clear obstacles" sid="8338197260729409" type="enemySphere" />
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="5944642815913245" type="enemySphere">
+                    <param id="0" name="Obstacle">wallAntiMagic</param>
+                </action>
                 <action behavior="Pathfinding" id="0" name="Find path" sid="7827358696427459" type="enemySphere">
                     <param id="0" name="X">hero.X</param>
                     <param id="1" name="Y">hero.Y</param>
                 </action>
-                <action behavior="Pathfinding" id="14" name="Set speed" sid="6835353636768812" type="enemySphere">
-                    <param id="0" name="Speed">800</param>
-                </action>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="8316928487917824" type="enemySphere" />
             </actions>
         </event-block>
         <event-block sid="9114424927555185">
@@ -840,6 +844,25 @@
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="419549242853588">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="7730246131063618" type="enemySphere" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="6835353636768812" type="enemySphere">
+                    <param id="0" name="Speed">800</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="8316928487917824" type="enemySphere" />
+            </actions>
+        </event-block>
+        <event-block sid="1318355519336012">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4025432584767219" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="4" name="Regenerate obstacle map" sid="8318537586087751" type="enemySphere" />
             </actions>
         </event-block>
     </events>

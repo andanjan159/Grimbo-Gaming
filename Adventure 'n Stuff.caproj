@@ -250,9 +250,15 @@
         </object-type>
         <object-type name="Wall" sid="4069313668778166">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7304999230974038">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7877888754481469" speed="5">
-                    <frame duration="1" hotspotX="-1" hotspotY="-1" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7877888754481469" speed="0">
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\finalConstructProject\Grimbo-Gaming\snowCenter.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -985,6 +991,14 @@
         </object-type>
         <object-type name="Health" sid="2882764641060562">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="wallAntiMagic" sid="7183555919530142">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2214351561519242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

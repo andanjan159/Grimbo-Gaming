@@ -8901,7 +8901,7 @@
                             <properties>
                                 <cell-size>30</cell-size>
                                 <cell-border>-1</cell-border>
-                                <obstacles>Solids</obstacles>
+                                <obstacles>Custom</obstacles>
                                 <max-speed>200</max-speed>
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
@@ -8920,32 +8920,6 @@
                         <z>0</z>
                         <width>96</width>
                         <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="enemy4" uid="504">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <attackSpeed>1</attackSpeed>
-                        <health>0</health>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>224</x>
-                        <y>160</y>
-                        <z>0</z>
-                        <width>79.689002991</width>
-                        <height>103.942001343</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -9028,14 +9002,21 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-224</x>
                         <y>-32</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>17.920000076</width>
+                        <height>17.920000076</height>
                         <depth>0</depth>
                         <hotspotX>-1</hotspotX>
                         <hotspotY>-1</hotspotY>
@@ -9515,6 +9496,32 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemy4" uid="504">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <attackSpeed>1</attackSpeed>
+                        <health>3</health>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224</x>
+                        <y>160</y>
+                        <z>0</z>
+                        <width>79.689002991</width>
+                        <height>103.942001343</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

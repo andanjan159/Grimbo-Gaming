@@ -415,7 +415,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -462,7 +462,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -509,7 +509,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -643,7 +643,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -690,7 +690,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -737,7 +737,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -784,7 +784,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
@@ -831,7 +831,7 @@
                         <savedX>0</savedX>
                         <savedY>0</savedY>
                         <playerSpotted>false</playerSpotted>
-                        <health>1</health>
+                        <health>3</health>
                         <allowAttack>false</allowAttack>
                         <allowMove>true</allowMove>
                         <speedBoost>true</speedBoost>
