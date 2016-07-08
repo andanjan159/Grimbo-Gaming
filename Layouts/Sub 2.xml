@@ -138,6 +138,8 @@
                     <instance-variables>
                         <allowMove>true</allowMove>
                         <allowAttack>false</allowAttack>
+                        <spawnX>0</spawnX>
+                        <spawnY>0</spawnY>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">

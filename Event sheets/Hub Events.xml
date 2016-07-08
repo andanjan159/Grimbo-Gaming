@@ -883,5 +883,56 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2979297601185198">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3789416051377505" type="hero">
+                    <param id="0" name="Object">door1Exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="2027137960910445" type="hero">
+                    <param id="0" name="Instance variable">spawnX</param>
+                    <param id="1" name="Value">416</param>
+                </action>
+                <action id="-10" name="Set value" sid="3933684974809578" type="hero">
+                    <param id="0" name="Instance variable">spawnX</param>
+                    <param id="1" name="Value">512</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9389996268039508">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8476865133494748" type="hero">
+                    <param id="0" name="Object">door2Exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3978385863059486" type="hero">
+                    <param id="0" name="Instance variable">spawnX</param>
+                    <param id="1" name="Value">2368</param>
+                </action>
+                <action id="-10" name="Set value" sid="6720335659774021" type="hero">
+                    <param id="0" name="Instance variable">spawnX</param>
+                    <param id="1" name="Value">1664</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5848104104725119">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8412012646863026" type="hero">
+                    <param id="0" name="Object">door1Exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7183122323737907" type="hero">
+                    <param id="0" name="Instance variable">spawnX</param>
+                    <param id="1" name="Value">416</param>
+                </action>
+                <action id="-10" name="Set value" sid="5355646427533328" type="hero">
+                    <param id="0" name="Instance variable">spawnX</param>
+                    <param id="1" name="Value">512</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
