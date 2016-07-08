@@ -521,17 +521,17 @@
                 <action id="-18" name="Rotate clockwise" sid="5875110210513858" type="enemySwipe">
                     <param id="0" name="Degrees">90</param>
                 </action>
-                <action id="-16" name="Wait" sid="8582632552559371" type="System">
-                    <param id="0" name="Seconds">0.25</param>
+                <action id="-16" name="Wait" sid="8795965841139958" type="System">
+                    <param id="0" name="Seconds">0.8</param>
                 </action>
-                <action id="5" name="Set frame" sid="8445378655670483" type="enemySwipe">
+                <action id="5" name="Set frame" sid="144846862534755" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="8795965841139958" type="System">
-                    <param id="0" name="Seconds">0.25</param>
+                <action id="-16" name="Wait" sid="4051894753931443" type="System">
+                    <param id="0" name="Seconds">0.2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="3247219715509804" type="enemySwipe" />
-                <action id="-16" name="Wait" sid="4051894753931443" type="System">
+                <action id="-16" name="Wait" sid="6429167784729491" type="System">
                     <param id="0" name="Seconds">0.2</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="3816223807462444" type="enemy1">
@@ -582,7 +582,7 @@
                     <param id="0" name="Degrees">-90</param>
                 </action>
                 <action id="-16" name="Wait" sid="7473715077701524" type="System">
-                    <param id="0" name="Seconds">0.5</param>
+                    <param id="0" name="Seconds">0.8</param>
                 </action>
                 <action id="5" name="Set frame" sid="996048685919292" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
@@ -591,6 +591,9 @@
                     <param id="0" name="Seconds">0.2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="3042956150775642" type="enemySwipe" />
+                <action id="-16" name="Wait" sid="7516506293998893" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
                 <action id="-13" name="Set boolean" sid="8828018194773103" type="enemy1">
                     <param id="0" name="Instance variable">allowMove</param>
                     <param id="1" name="Value">1</param>
@@ -639,7 +642,7 @@
                     <param id="0" name="Degrees">180</param>
                 </action>
                 <action id="-16" name="Wait" sid="9538012873331608" type="System">
-                    <param id="0" name="Seconds">0.5</param>
+                    <param id="0" name="Seconds">0.8</param>
                 </action>
                 <action id="5" name="Set frame" sid="6222492405438003" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
@@ -648,6 +651,9 @@
                     <param id="0" name="Seconds">0.2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="3820758862084939" type="enemySwipe" />
+                <action id="-16" name="Wait" sid="7329502173293575" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
                 <action id="-13" name="Set boolean" sid="9088642914258829" type="enemy1">
                     <param id="0" name="Instance variable">allowMove</param>
                     <param id="1" name="Value">1</param>
@@ -693,7 +699,7 @@
                     <param id="3" name="Y">enemy1.Y - 40</param>
                 </action>
                 <action id="-16" name="Wait" sid="3633339733917263" type="System">
-                    <param id="0" name="Seconds">0.5</param>
+                    <param id="0" name="Seconds">0.8</param>
                 </action>
                 <action id="5" name="Set frame" sid="4054948670974714" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
@@ -702,6 +708,9 @@
                     <param id="0" name="Seconds">0.2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6715700159191718" type="enemySwipe" />
+                <action id="-16" name="Wait" sid="2633940175387219" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
                 <action id="-13" name="Set boolean" sid="7739389387577937" type="enemy1">
                     <param id="0" name="Instance variable">allowMove</param>
                     <param id="1" name="Value">1</param>
