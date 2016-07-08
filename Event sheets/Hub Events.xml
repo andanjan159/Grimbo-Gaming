@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Hub Events</name>
     <events>
-        <variable constant="0" name="playerHealth" sid="6038929269285387" static="0" type="number">10</variable>
+        <variable constant="0" name="playerHealth" sid="6038929269285387" static="0" type="number">25</variable>
         <variable constant="0" name="playerAS" sid="6245978028278152" static="0" type="number">1</variable>
         <event-block sid="135956644599215">
             <conditions>

@@ -9509,7 +9509,7 @@
                     </properties>
                     <instance-variables>
                         <attackSpeed>1</attackSpeed>
-                        <health>3</health>
+                        <health>2</health>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
