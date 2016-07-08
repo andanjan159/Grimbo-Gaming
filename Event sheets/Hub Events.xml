@@ -519,15 +519,18 @@
                     <param id="0" name="Degrees">90</param>
                 </action>
                 <action id="-16" name="Wait" sid="8582632552559371" type="System">
-                    <param id="0" name="Seconds">0.3</param>
+                    <param id="0" name="Seconds">0.25</param>
                 </action>
                 <action id="5" name="Set frame" sid="8445378655670483" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
                 </action>
+                <action id="-16" name="Wait" sid="8795965841139958" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3247219715509804" type="enemySwipe" />
                 <action id="-16" name="Wait" sid="4051894753931443" type="System">
                     <param id="0" name="Seconds">0.2</param>
                 </action>
-                <action id="-9" name="Destroy" sid="3247219715509804" type="enemySwipe" />
                 <action id="-13" name="Set boolean" sid="3816223807462444" type="enemy1">
                     <param id="0" name="Instance variable">allowMove</param>
                     <param id="1" name="Value">1</param>
@@ -576,7 +579,7 @@
                     <param id="0" name="Degrees">-90</param>
                 </action>
                 <action id="-16" name="Wait" sid="7473715077701524" type="System">
-                    <param id="0" name="Seconds">0.3</param>
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="5" name="Set frame" sid="996048685919292" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
@@ -633,7 +636,7 @@
                     <param id="0" name="Degrees">180</param>
                 </action>
                 <action id="-16" name="Wait" sid="9538012873331608" type="System">
-                    <param id="0" name="Seconds">0.3</param>
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="5" name="Set frame" sid="6222492405438003" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
@@ -687,7 +690,7 @@
                     <param id="3" name="Y">enemy1.Y - 40</param>
                 </action>
                 <action id="-16" name="Wait" sid="3633339733917263" type="System">
-                    <param id="0" name="Seconds">0.3</param>
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="5" name="Set frame" sid="4054948670974714" type="enemySwipe">
                     <param id="0" name="Frame number">1</param>
@@ -704,16 +707,27 @@
         </event-block>
         <event-block sid="4348561777275464">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7336040355489578" type="enemySwipe">
-                    <param id="0" name="Object">hero</param>
+                <condition id="3" name="Compare frame" sid="2277993534305079" type="enemySwipe">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="5300079747157488" type="System">
-                    <param id="0" name="Variable">playerHealth</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="3860372361876278">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7336040355489578" type="enemySwipe">
+                            <param id="0" name="Object">hero</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="5300079747157488" type="System">
+                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="3125541989245041">
             <conditions>
@@ -866,6 +880,9 @@
                 <condition id="-2" name="On start of layout" sid="2573794436678937" type="System" />
             </conditions>
             <actions>
+                <action id="4" name="Set font color" sid="2788767406441293" type="Health">
+                    <param id="0" name="Color">rgb(200, 0, 0)</param>
+                </action>
                 <action id="0" name="Set text" sid="1670710428375837" type="Health">
                     <param id="0" name="Text">&quot;Health: &quot; &amp; playerHealth</param>
                 </action>
@@ -878,6 +895,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="4" name="Set font color" sid="7885830987829737" type="Health">
+                    <param id="0" name="Color">rgb(200, 0, 0)</param>
+                </action>
                 <action id="0" name="Set text" sid="453727874697601" type="Health">
                     <param id="0" name="Text">&quot;Health &quot; &amp;playerHealth</param>
                 </action>

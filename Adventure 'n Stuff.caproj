@@ -756,15 +756,15 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1183704384171235" speed="0">
                     <frame duration="1" hotspotX="0.504883" hotspotY="0.563477" original-source="D:\finalConstructProject\Grimbo-Gaming\whiteSlash.png">
                         <collision-poly>
-                            <point x="0.442871" y="0.473145" />
-                            <point x="0.5" y="0.459473" />
-                            <point x="0.557129" y="0.472168" />
-                            <point x="0.604492" y="0.53418" />
+                            <point x="0.442871" y="0.455567" />
+                            <point x="0.5" y="0.439453" />
+                            <point x="0.557129" y="0.454102" />
+                            <point x="0.604492" y="0.496094" />
                             <point x="0.604492" y="0.627686" />
                             <point x="0.530274" y="0.627929" />
                             <point x="0.484375" y="0.627442" />
                             <point x="0.407226" y="0.627441" />
-                            <point x="0.407226" y="0.522949" />
+                            <point x="0.407226" y="0.491699" />
                         </collision-poly>
                     </frame>
                 </animation>
