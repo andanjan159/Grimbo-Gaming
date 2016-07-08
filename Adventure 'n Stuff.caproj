@@ -1000,11 +1000,52 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Back2" sid="9078951212191255">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite6" sid="8059186135391522">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593009246356584" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final\Grimbo-Gaming\Controlls.png">
+                        <collision-poly>
+                            <point x="0.26166" y="0.393961" />
+                            <point x="0.709188" y="0.437851" />
+                            <point x="0.623601" y="0.433287" />
+                            <point x="0.366138" y="0.448736" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controlbutton2" sid="6600754976785408">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3934391443589349" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartButton2" sid="2449688986855923">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1787584094596178" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.535999" />
+                            <point x="0" y="0.535999" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="door1Exit" sid="290232515558639">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9478436332092556" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\Final\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1012,7 +1053,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298319497937857" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1020,7 +1061,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3030831575396142" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1028,7 +1069,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5351739140447692" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1061,8 +1102,8 @@
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="533" />
-        <global-instance type="Mouse" uid="534" />
+        <global-instance type="Keyboard" uid="534" />
+        <global-instance type="Mouse" uid="997" />
     </global-instances>
     <sounds-folder />
     <music-folder />
