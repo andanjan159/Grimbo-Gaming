@@ -1020,34 +1020,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Controlbutton2" sid="6600754976785408">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3934391443589349" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="StartButton2" sid="2449688986855923">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1787584094596178" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.535999" />
-                            <point x="0" y="0.535999" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="door1Exit" sid="290232515558639">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9478436332092556" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\Final\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\Final\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1075,6 +1052,41 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="2637621049741852">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="1777201186070525">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Credits" sid="7639548402050109">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite7" sid="9667227590963787">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7483750628401317" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text4" sid="6248492087522926">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="7035804559392356">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text6" sid="7167563280509236">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text7" sid="7086342188822305">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="2ndBack" sid="3611598459119034">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text8" sid="4865009353211975">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1089,6 +1101,7 @@
         <layout>Title Page.xml</layout>
         <layout>Control Layout.xml</layout>
         <layout>Conclusion.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Sub events">
@@ -1102,6 +1115,7 @@
         <event-sheet>Title Page Event.xml</event-sheet>
         <event-sheet>Control Layout Event.xml</event-sheet>
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="534" />

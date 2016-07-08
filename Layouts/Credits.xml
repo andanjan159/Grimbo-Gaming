@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Control Layout</name>
-    <sid>6031316307759446</sid>
-    <event-sheet>Control Layout Event</event-sheet>
+    <name>Credits</name>
+    <sid>8479484651923916</sid>
+    <event-sheet>Event sheet 1</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Background" sid="2048934977003093">
+        <layer name="Background" sid="3018514554800764">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="524">
+                <instance type="Sprite7" uid="518">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,33 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>427.406982422</x>
-                        <y>239.593032837</y>
+                        <x>427</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>854</width>
-                        <height>482</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite6" uid="525">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>438</x>
-                        <y>308</y>
-                        <z>0</z>
-                        <width>1276.890380859</width>
-                        <height>770.083374023</height>
+                        <width>852</width>
+                        <height>481</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -76,7 +54,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="HUB" sid="246118078761613">
+        <layer name="HUD" sid="9906106848742028">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -92,9 +70,9 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Back" uid="526">
+                <instance type="Text4" uid="1000">
                     <properties>
-                        <text>Back</text>
+                        <text>Sprites: Charas Online Resource Generator</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>0,0,0</color>
@@ -107,11 +85,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>34</x>
-                        <y>396</y>
+                        <x>16</x>
+                        <y>140</y>
                         <z>0</z>
-                        <width>106</width>
-                        <height>54</height>
+                        <width>672</width>
+                        <height>55</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -119,12 +97,120 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Back2" uid="527">
+                <instance type="Text5" uid="1001">
+                    <properties>
+                        <text>Sound Assests: Free Sounds.org</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>17</x>
+                        <y>211</y>
+                        <z>0</z>
+                        <width>682</width>
+                        <height>82</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text6" uid="1002">
+                    <properties>
+                        <text>Credits</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-48,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>36</x>
+                        <y>39</y>
+                        <z>0</z>
+                        <width>283</width>
+                        <height>77</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text7" uid="1003">
+                    <properties>
+                        <text>Backgrounds: Forest Sprite Backgrounds.org</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12</x>
+                        <y>287</y>
+                        <z>0</z>
+                        <width>672</width>
+                        <height>73</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="2ndBack" uid="1004">
+                    <properties>
+                        <text>Back</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-27,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>17</x>
+                        <y>403</y>
+                        <z>0</z>
+                        <width>127</width>
+                        <height>73</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text8" uid="1005">
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-32,400,0</font>
-                        <color>255,255,255</color>
+                        <font>Arial,-27,400,0</font>
+                        <color>255,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -134,65 +220,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>34</x>
-                        <y>395</y>
+                        <x>17</x>
+                        <y>403</y>
                         <z>0</z>
-                        <width>195</width>
-                        <height>78</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Text" uid="998">
-                    <properties>
-                        <text>Attack</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>607</x>
-                        <y>47</y>
-                        <z>0</z>
-                        <width>225</width>
-                        <height>104</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Text2" uid="999">
-                    <properties>
-                        <text>Move</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>99</x>
-                        <y>47</y>
-                        <z>0</z>
-                        <width>161</width>
-                        <height>94</height>
+                        <width>95</width>
+                        <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
