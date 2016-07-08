@@ -865,5 +865,27 @@
                 <action behavior="Pathfinding" id="4" name="Regenerate obstacle map" sid="8318537586087751" type="enemySphere" />
             </actions>
         </event-block>
+        <event-block sid="8085000189837819">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2573794436678937" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1670710428375837" type="Health">
+                    <param id="0" name="Text">&quot;Health: &quot; &amp; playerHealth</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6263574414276504">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1676559061008934" type="hero">
+                    <param id="0" name="Object">enemySwipe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="453727874697601" type="Health">
+                    <param id="0" name="Text">&quot;Health &quot; &amp;playerHealth</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
