@@ -1090,6 +1090,7 @@
         <object-type name="Text8" sid="4865009353211975">
             <plugin id="Text" />
         </object-type>
+<<<<<<< HEAD
         <object-type name="finalDoor" sid="1255008194191043">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1134,6 +1135,17 @@
             <plugin id="Text" />
         </object-type>
         <object-type name="Text10" sid="8443704777269405">
+=======
+        <object-type name="Sprite8" sid="5419429031626624">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5814982981362697" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="story" sid="140521311902602">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
             <plugin id="Text" />
         </object-type>
     </object-folder>
@@ -1152,6 +1164,7 @@
         <layout>Control Layout.xml</layout>
         <layout>Conclusion.xml</layout>
         <layout>Credits.xml</layout>
+        <layout>Story.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Sub events">
@@ -1167,6 +1180,7 @@
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
         <event-sheet>BossRoomEvents.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>story Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1173" />

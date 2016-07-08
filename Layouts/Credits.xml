@@ -29,7 +29,11 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
                 <instance type="Sprite7" uid="1166">
+=======
+                <instance type="Sprite7" uid="1016">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -70,7 +74,11 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
                 <instance type="Text4" uid="1167">
+=======
+                <instance type="Text4" uid="1017">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <text>Sprites: Charas Online Resource Generator</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -97,7 +105,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Text5" uid="1168">
+=======
+                <instance type="Text5" uid="1018">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <text>Sound Assests: Free Sounds.org</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -124,7 +136,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Text6" uid="1169">
+=======
+                <instance type="Text6" uid="1019">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <text>Credits</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -151,7 +167,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Text7" uid="1170">
+=======
+                <instance type="Text7" uid="1020">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <text>Backgrounds: Forest Sprite Backgrounds.org</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -178,7 +198,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="2ndBack" uid="1171">
+=======
+                <instance type="2ndBack" uid="1021">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -205,7 +229,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Text8" uid="1172">
+=======
+                <instance type="Text8" uid="1022">
+>>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Invisible</initial-visibility>
