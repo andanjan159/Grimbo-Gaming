@@ -23,10 +23,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="20">Story</layout>
         <layout order="22">BossRoom</layout>
         <event-sheet order="1">Hub Events</event-sheet>
-        <event-sheet active="1" order="3">Sub 1 Events</event-sheet>
+        <event-sheet order="3">Sub 1 Events</event-sheet>
         <event-sheet order="5">Sub 2 Events</event-sheet>
         <event-sheet order="7">Sub 3 Events</event-sheet>
-        <event-sheet order="9">Sub 4 Events</event-sheet>
+        <event-sheet active="1" order="9">Sub 4 Events</event-sheet>
         <event-sheet order="11">Title Page Event</event-sheet>
         <event-sheet order="13">Control Layout Event</event-sheet>
         <event-sheet order="15">Conclusion Event Sheet</event-sheet>

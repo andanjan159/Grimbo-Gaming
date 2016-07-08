@@ -3,415 +3,815 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>BossRoomEvents</name>
     <events>
-        <include>Hub Events</include>
-        <event-block sid="3643436642292628">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="8850221162889042" type="mimic">
-                    <param id="0" name="Instance variable">opened</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="9434536007264888" title="Player2">
             <sub-events>
-                <event-block sid="6844213590062967">
+                <event-block sid="6668461744839649">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="7709568834048694" type="mimic">
-                            <param id="0" name="Instance variable">allowAttack</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="8578024967305625" type="mimic">
-                            <param id="0" name="Comparison">3</param>
-                            <param id="1" name="Y co-ordinate">hero.Y+100</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="2334185053983888" type="mimic">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">hero.Y</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="8145185180731259" type="mimic">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">hero.X - 52</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="3238785626229498" type="mimic">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">hero.X + 52</param>
+                        <condition id="0" name="On collision with another object" sid="1572264222162667" type="hero">
+                            <param id="0" name="Object">keys</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="458099909481159" type="mimic">
+                        <action id="-10" name="Add to" sid="2035944762553409" type="System">
+                            <param id="0" name="Variable">keyPoints</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8410126591513388" type="keys" />
+                        <action id="0" name="Set text" sid="1078783966409219" type="keyAmount">
+                            <param id="0" name="Text">&quot;Keys: &quot;&amp;keyPoints</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3710059425883375">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1872561556794017" type="hero">
+                            <param id="0" name="Object">lava</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4275357707866176" type="hero" />
+                    </actions>
+                </event-block>
+                <event-block sid="3276859744678666">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4668340850374443" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="6838486002407335" type="hero">
+                            <param id="0" name="Instance variable">allowMove</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="3525948918657285" type="hero">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="1628463886766918" type="hero">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5331500135124119" type="hero">
+                            <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1690772963874472">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5610966950552215" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="5926870353316137" type="hero">
+                            <param id="0" name="Instance variable">allowMove</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7600149293523267" type="hero">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="1347654796104255" type="hero">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="1520146691253531" type="hero">
+                            <param id="0" name="Animation">&quot;WalkSide&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7167048172408497">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="1437325414943062" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="2617139307367518" type="hero">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="6700817219978537" type="hero">
                             <param id="0" name="Instance variable">allowAttack</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="7658924409330925" type="mimic">
+                        <action behavior="8Direction" id="0" name="Stop" sid="6552198551874337" type="hero" />
+                        <action id="-3" name="Create object" sid="7922496576490142" type="System">
+                            <param id="0" name="Object to create">playerSwipe</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">hero.X</param>
+                            <param id="3" name="Y">hero.Y - 40</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="6966535716466757" type="hero">
                             <param id="0" name="Instance variable">allowMove</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="2115080499288847" type="mimic" />
-                        <action id="-3" name="Create object" sid="5956190915328002" type="System">
-                            <param id="0" name="Object to create">enemySwipe</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">mimic.X</param>
-                            <param id="3" name="Y">mimic.Y - 40</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="1882289995142982" type="System">
-                            <param id="0" name="Seconds">0.8</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="6405391659666036" type="enemySwipe">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="1384098752010225" type="System">
+                        <action id="-16" name="Wait" sid="4156354430123182" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="2141355420550207" type="enemySwipe" />
-                        <action id="-16" name="Wait" sid="2857654712731598" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="6363337763227823" type="mimic">
+                        <action id="-9" name="Destroy" sid="8404489715557751" type="playerSwipe" />
+                        <action id="-13" name="Set boolean" sid="4102001014271682" type="hero">
                             <param id="0" name="Instance variable">allowMove</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="937022032926668">
+                <event-block sid="4727023675266939">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="1055359309122285" type="mimic">
+                        <condition id="3" name="On key released" sid="2929705038398767" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="4885769078311541" type="hero">
                             <param id="0" name="Instance variable">allowAttack</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="193870756545283" type="mimic">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="Y co-ordinate">hero.Y-100</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="2045327734782341" type="mimic">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">hero.Y</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="2026499064764378" type="mimic">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">hero.X + 52</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="3975688301769766" type="mimic">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">hero.X - 52</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="2248771359741109" type="mimic">
+                        <action id="-13" name="Set boolean" sid="6435236665171038" type="hero">
                             <param id="0" name="Instance variable">allowAttack</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="3172895098922292" type="mimic">
-                            <param id="0" name="Instance variable">allowMove</param>
-                            <param id="1" name="Value">0</param>
+                        <action behavior="8Direction" id="0" name="Stop" sid="4798334497083932" type="hero" />
+                        <action id="-3" name="Create object" sid="5861599448336971" type="System">
+                            <param id="0" name="Object to create">playerSwipe</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">hero.X - 40</param>
+                            <param id="3" name="Y">hero.Y</param>
                         </action>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="2796141662942665" type="mimic" />
-                        <action id="-3" name="Create object" sid="3853898271024942" type="System">
-                            <param id="0" name="Object to create">enemySwipe</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">mimic.X</param>
-                            <param id="3" name="Y">mimic.Y + 40</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="6652350760999359" type="enemySwipe">
-                            <param id="0" name="Degrees">180</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="7056708744096198" type="System">
-                            <param id="0" name="Seconds">0.8</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="443407072392815" type="enemySwipe">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="8584903806549153" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="5594099925326374" type="enemySwipe" />
-                        <action id="-16" name="Wait" sid="1825498627569788" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="7296225913157351" type="mimic">
-                            <param id="0" name="Instance variable">allowMove</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="5176022982371042">
-                    <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="7542285644559643" type="mimic">
-                            <param id="0" name="Instance variable">allowAttack</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="3506936314950745" type="mimic">
-                            <param id="0" name="Comparison">3</param>
-                            <param id="1" name="X co-ordinate">hero.X+100</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="2073188636519241" type="mimic">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">hero.X</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="7856529868239929" type="mimic">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">hero.Y + 52</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="8900883100843694" type="mimic">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">hero.Y - 52</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="2355953266355456" type="mimic">
-                            <param id="0" name="Instance variable">allowAttack</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="9404101079695064" type="mimic">
-                            <param id="0" name="Instance variable">allowMove</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="9780509435986869" type="mimic" />
-                        <action id="-3" name="Create object" sid="5244841979090012" type="System">
-                            <param id="0" name="Object to create">enemySwipe</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">mimic.X - 40</param>
-                            <param id="3" name="Y">mimic.Y</param>
-                        </action>
-                        <action id="-18" name="Rotate clockwise" sid="1400868666371811" type="enemySwipe">
+                        <action id="-18" name="Rotate clockwise" sid="9492698195391752" type="playerSwipe">
                             <param id="0" name="Degrees">-90</param>
                         </action>
-                        <action id="-16" name="Wait" sid="2205250279873432" type="System">
-                            <param id="0" name="Seconds">0.8</param>
+                        <action id="-13" name="Set boolean" sid="2960818762742511" type="hero">
+                            <param id="0" name="Instance variable">allowMove</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="7872421815145962" type="enemySwipe">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="6201149887276605" type="System">
+                        <action id="-16" name="Wait" sid="4658095725711885" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="8405697384347714" type="enemySwipe" />
-                        <action id="-16" name="Wait" sid="4976383309911149" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="9299833164106575" type="mimic">
+                        <action id="-9" name="Destroy" sid="2551855119213989" type="playerSwipe" />
+                        <action id="-13" name="Set boolean" sid="9775191310247375" type="hero">
                             <param id="0" name="Instance variable">allowMove</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="6309305556685175">
+                <event-block sid="4534122987192707">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="6030754905487331" type="mimic">
+                        <condition id="3" name="On key released" sid="8559134671699605" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="1109481861526853" type="hero">
                             <param id="0" name="Instance variable">allowAttack</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="2098199730697752" type="mimic">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="X co-ordinate">hero.X-100</param>
-                        </condition>
-                        <condition id="-1" name="Compare X" sid="4754108663895814" type="mimic">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">hero.X</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="167342682952478" type="mimic">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">hero.Y + 52</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="4159909973276098" type="mimic">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">hero.Y - 52</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="902395850655124" type="mimic">
+                        <action id="-13" name="Set boolean" sid="7014127578605367" type="hero">
                             <param id="0" name="Instance variable">allowAttack</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="5810661565557181" type="mimic">
+                        <action behavior="8Direction" id="0" name="Stop" sid="5169853173492684" type="hero" />
+                        <action id="-3" name="Create object" sid="1783379465982332" type="System">
+                            <param id="0" name="Object to create">playerSwipe</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">hero.X</param>
+                            <param id="3" name="Y">hero.Y + 40</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="5308533362205485" type="playerSwipe">
+                            <param id="0" name="Degrees">180</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="2589907866539678" type="hero">
                             <param id="0" name="Instance variable">allowMove</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="6693038352226714" type="mimic" />
-                        <action id="-3" name="Create object" sid="6681497983726754" type="System">
-                            <param id="0" name="Object to create">enemySwipe</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">mimic.X + 40</param>
-                            <param id="3" name="Y">mimic.Y</param>
+                        <action id="-16" name="Wait" sid="9270673508729196" type="System">
+                            <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="-18" name="Rotate clockwise" sid="601891573419799" type="enemySwipe">
+                        <action id="-9" name="Destroy" sid="250408933894431" type="playerSwipe" />
+                        <action id="-13" name="Set boolean" sid="6000109422194055" type="hero">
+                            <param id="0" name="Instance variable">allowMove</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6283566809072353">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="6203069703230301" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="953902400318023" type="hero">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="1039322229326523" type="hero">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="1693017243987558" type="hero" />
+                        <action id="-3" name="Create object" sid="1665922695091523" type="System">
+                            <param id="0" name="Object to create">playerSwipe</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">hero.X + 40</param>
+                            <param id="3" name="Y">hero.Y</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="2140312993767963" type="playerSwipe">
                             <param id="0" name="Degrees">90</param>
                         </action>
-                        <action id="-16" name="Wait" sid="9244319270895492" type="System">
-                            <param id="0" name="Seconds">0.8</param>
+                        <action id="-13" name="Set boolean" sid="5577353518981907" type="hero">
+                            <param id="0" name="Instance variable">allowMove</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="2110947089693102" type="enemySwipe">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="7891774727594905" type="System">
+                        <action id="-16" name="Wait" sid="1001074691066789" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="105501889810459" type="enemySwipe" />
-                        <action id="-16" name="Wait" sid="2640569992023742" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="2653473854892575" type="mimic">
+                        <action id="-9" name="Destroy" sid="4237482536251723" type="playerSwipe" />
+                        <action id="-13" name="Set boolean" sid="5275322998442712" type="hero">
                             <param id="0" name="Instance variable">allowMove</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="3162203788987661">
+                <event-block sid="2774011593489698">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="6778705772466837" type="System">
-                            <param id="0" name="Interval (seconds)">0.1</param>
+                        <condition id="0" name="On collision with another object" sid="3051149268843901" type="playerSwipe">
+                            <param id="0" name="Object">enemy1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="7324585438113793" type="mimic">
-                            <param id="0" name="X">hero.X</param>
-                            <param id="1" name="Y">hero.Y</param>
+                        <action id="-12" name="Subtract from" sid="5106408298010867" type="enemy1">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="7598739469332221">
+                <event-block sid="979188718246665">
                     <conditions>
-                        <condition behavior="Pathfinding" id="0" name="On path found" sid="755447083915686" type="mimic" />
-                        <condition id="-8" name="Is boolean instance variable set" sid="9422966633725195" type="mimic">
+                        <condition id="-6" name="Every X seconds" sid="7950299770861685" type="System">
+                            <param id="0" name="Interval (seconds)">playerAS</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3735827719273525" type="hero">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="1072208171254428" type="hero">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3125541989245041">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9836214629547178" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1605802356992285" type="keyAmount">
+                            <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
+                        </action>
+                        <action behavior="Pathfinding" id="6" name="Clear obstacles" sid="8126556912953094" type="enemySphere" />
+                        <action behavior="Pathfinding" id="5" name="Add obstacle" sid="2505311039706354" type="enemySphere">
+                            <param id="0" name="Obstacle">wallAntiMagic</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="135956644599215">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="4303832418862004" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="7269431455794276" type="hero">
                             <param id="0" name="Instance variable">allowMove</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pathfinding" id="14" name="Set speed" sid="707767854800797" type="mimic">
-                            <param id="0" name="Speed">250</param>
+                        <action id="7" name="Set mirrored" sid="5741095446260395" type="hero">
+                            <param id="0" name="State">1</param>
                         </action>
-                        <action behavior="Pathfinding" id="1" name="Move along path" sid="1234851138505756" type="mimic" />
+                        <action id="4" name="Set animation" sid="3998310474059915" type="hero">
+                            <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="8390271076458792" type="hero">
+                            <param id="0" name="Control">2</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="2225894292634168">
+                <event-block sid="819907846245123">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="98295429348377" type="System">
-                            <param id="0" name="Interval (seconds)">0.5</param>
+                        <condition id="2" name="Key is down" sid="85795102288537" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="511758576844997" type="hero">
+                            <param id="0" name="Instance variable">allowMove</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="2657868690573668" type="System">
-                            <param id="0" name="Object to create">enemySphere</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">mimic.X</param>
-                            <param id="3" name="Y">mimic.Y</param>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="7632614505912561" type="hero">
+                            <param id="0" name="Control">0</param>
                         </action>
-                        <action behavior="Pathfinding" id="6" name="Clear obstacles" sid="9657853821413355" type="enemySphere" />
-                        <action behavior="Pathfinding" id="5" name="Add obstacle" sid="3824858026748456" type="enemySphere">
-                            <param id="0" name="Obstacle">wallAntiMagic</param>
+                        <action id="4" name="Set animation" sid="9635189979525529" type="hero">
+                            <param id="0" name="Animation">&quot;WalkSide&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="5802864035784266" type="enemySphere">
-                            <param id="0" name="X">hero.X</param>
-                            <param id="1" name="Y">hero.Y</param>
+                        <action id="7" name="Set mirrored" sid="738807580076289" type="hero">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="1458459170146511">
+                <event-block sid="8085000189837819">
                     <conditions>
-                        <condition behavior="Pathfinding" id="5" name="On arrived" sid="7164143021036347" type="enemySphere" />
+                        <condition id="-2" name="On start of layout" sid="2573794436678937" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="65222072960737" type="enemySphere" />
+                        <action id="4" name="Set font color" sid="2788767406441293" type="Health">
+                            <param id="0" name="Color">rgb(200, 0, 0)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1670710428375837" type="Health">
+                            <param id="0" name="Text">&quot;Health: &quot; &amp; playerHealth</param>
+                        </action>
                     </actions>
+                </event-block>
+                <event-block sid="6263574414276504">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1676559061008934" type="hero">
+                            <param id="0" name="Object">enemySwipe</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="7885830987829737" type="Health">
+                            <param id="0" name="Color">rgb(200, 0, 0)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="453727874697601" type="Health">
+                            <param id="0" name="Text">&quot;Health &quot; &amp;playerHealth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="235454546933266">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="760417638278005" type="hero" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2382762450469586" type="System">
+                            <param id="0" name="Layout">Title Page</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2334701015195962">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6208542902496807" type="System" />
+                    </conditions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="257147301274761">
+                        <event-block sid="5275276501885248">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="5119618549850918" type="enemySphere">
-                                    <param id="0" name="Comparison">3</param>
-                                    <param id="1" name="X co-ordinate">hero.X+100</param>
-                                </condition>
-                                <condition id="-1" name="Compare X" sid="544465923864082" type="enemySphere">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="X co-ordinate">hero.X - 100</param>
-                                </condition>
-                                <condition id="-2" name="Compare Y" sid="2138057687078658" type="enemySphere">
-                                    <param id="0" name="Comparison">3</param>
-                                    <param id="1" name="Y co-ordinate">hero.Y+100</param>
-                                </condition>
-                                <condition id="-2" name="Compare Y" sid="8678294762598281" type="enemySphere">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Y co-ordinate">hero.Y - 100</param>
+                                <condition id="-14" name="Compare variable" sid="5110348612410518" type="System">
+                                    <param id="0" name="Variable">onHub</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-11" name="Subtract from" sid="6828104836350215" type="System">
-                                    <param id="0" name="Variable">playerHealth</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="-1" name="Set X" sid="187914681543093" type="hero">
+                                    <param id="0" name="X">spawnX</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="5154477989085806" type="hero">
+                                    <param id="0" name="Y">spawnY</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="9972914996087356">
+        </event-group>
+        <event-group description="" sid="1174182202459255" title="Mimic">
+            <sub-events>
+                <event-block sid="2455305618445313">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7602748804422612" type="mimic">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9067339058604567" type="mimic" />
+                    </actions>
+                </event-block>
+                <event-block sid="8830602539964939">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="86847218076319" type="mimic" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="7980292355403933" type="System">
+                            <param id="0" name="Layout">Conclusion</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7994540610967717">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6120706480924554" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="2730164699306051" type="BossHealth">
+                            <param id="0" name="Text">&quot;Boss Health: &quot; &amp;  mimic.health</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3223930741439666">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2100605961069051" type="mimic">
+                            <param id="0" name="Object">playerSwipe</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="104916459955261" type="mimic">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="3016363013111491" type="BossHealth">
+                            <param id="0" name="Text">&quot;Boss Health: &quot;&amp; mimic.health</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4354386121046896">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="611734424424171" type="mimic">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="1922059950137833" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="1297283180632036" type="mimic">
+                            <param id="0" name="Instance variable">allowAttack</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9972914996087356">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1076354794062369" type="mimic">
+                            <param id="0" name="Object">hero</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="910425481304626" type="mimic">
+                            <param id="0" name="Instance variable">opened</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3643436642292628">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="8850221162889042" type="mimic">
+                            <param id="0" name="Instance variable">opened</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6844213590062967">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="7709568834048694" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="8578024967305625" type="mimic">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y+100</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="2334185053983888" type="mimic">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="8145185180731259" type="mimic">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">hero.X - 52</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="3238785626229498" type="mimic">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">hero.X + 52</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="458099909481159" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="7658924409330925" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Pathfinding" id="2" name="Stop" sid="2115080499288847" type="mimic" />
+                                <action id="-3" name="Create object" sid="5956190915328002" type="System">
+                                    <param id="0" name="Object to create">enemySwipe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">mimic.X</param>
+                                    <param id="3" name="Y">mimic.Y - 40</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1882289995142982" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="6405391659666036" type="enemySwipe">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1384098752010225" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="2141355420550207" type="enemySwipe" />
+                                <action id="-16" name="Wait" sid="2857654712731598" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="6363337763227823" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="937022032926668">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="1055359309122285" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="193870756545283" type="mimic">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y-100</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="2045327734782341" type="mimic">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="2026499064764378" type="mimic">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">hero.X + 52</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="3975688301769766" type="mimic">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">hero.X - 52</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="2248771359741109" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="3172895098922292" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Pathfinding" id="2" name="Stop" sid="2796141662942665" type="mimic" />
+                                <action id="-3" name="Create object" sid="3853898271024942" type="System">
+                                    <param id="0" name="Object to create">enemySwipe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">mimic.X</param>
+                                    <param id="3" name="Y">mimic.Y + 40</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="6652350760999359" type="enemySwipe">
+                                    <param id="0" name="Degrees">180</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7056708744096198" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="443407072392815" type="enemySwipe">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8584903806549153" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="5594099925326374" type="enemySwipe" />
+                                <action id="-16" name="Wait" sid="1825498627569788" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="7296225913157351" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5176022982371042">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="7542285644559643" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="3506936314950745" type="mimic">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">hero.X+100</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="2073188636519241" type="mimic">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">hero.X</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="7856529868239929" type="mimic">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y + 52</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="8900883100843694" type="mimic">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y - 52</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="2355953266355456" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="9404101079695064" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Pathfinding" id="2" name="Stop" sid="9780509435986869" type="mimic" />
+                                <action id="-3" name="Create object" sid="5244841979090012" type="System">
+                                    <param id="0" name="Object to create">enemySwipe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">mimic.X - 40</param>
+                                    <param id="3" name="Y">mimic.Y</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="1400868666371811" type="enemySwipe">
+                                    <param id="0" name="Degrees">-90</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2205250279873432" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="7872421815145962" type="enemySwipe">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="6201149887276605" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="8405697384347714" type="enemySwipe" />
+                                <action id="-16" name="Wait" sid="4976383309911149" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="9299833164106575" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6309305556685175">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="6030754905487331" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="2098199730697752" type="mimic">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">hero.X-100</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="4754108663895814" type="mimic">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">hero.X</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="167342682952478" type="mimic">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y + 52</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="4159909973276098" type="mimic">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">hero.Y - 52</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="902395850655124" type="mimic">
+                                    <param id="0" name="Instance variable">allowAttack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="5810661565557181" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Pathfinding" id="2" name="Stop" sid="6693038352226714" type="mimic" />
+                                <action id="-3" name="Create object" sid="6681497983726754" type="System">
+                                    <param id="0" name="Object to create">enemySwipe</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">mimic.X + 40</param>
+                                    <param id="3" name="Y">mimic.Y</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="601891573419799" type="enemySwipe">
+                                    <param id="0" name="Degrees">90</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="9244319270895492" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="2110947089693102" type="enemySwipe">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7891774727594905" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="105501889810459" type="enemySwipe" />
+                                <action id="-16" name="Wait" sid="2640569992023742" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="2653473854892575" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3162203788987661">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="6778705772466837" type="System">
+                                    <param id="0" name="Interval (seconds)">0.1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="7324585438113793" type="mimic">
+                                    <param id="0" name="X">hero.X</param>
+                                    <param id="1" name="Y">hero.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7598739469332221">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="755447083915686" type="mimic" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="9422966633725195" type="mimic">
+                                    <param id="0" name="Instance variable">allowMove</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="14" name="Set speed" sid="707767854800797" type="mimic">
+                                    <param id="0" name="Speed">250</param>
+                                </action>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="1234851138505756" type="mimic" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="2225894292634168">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="98295429348377" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="2657868690573668" type="System">
+                                    <param id="0" name="Object to create">enemySphere</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">mimic.X</param>
+                                    <param id="3" name="Y">mimic.Y</param>
+                                </action>
+                                <action behavior="Pathfinding" id="6" name="Clear obstacles" sid="9657853821413355" type="enemySphere" />
+                                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="3824858026748456" type="enemySphere">
+                                    <param id="0" name="Obstacle">wallAntiMagic</param>
+                                </action>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="5802864035784266" type="enemySphere">
+                                    <param id="0" name="X">hero.X</param>
+                                    <param id="1" name="Y">hero.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1458459170146511">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="5" name="On arrived" sid="7164143021036347" type="enemySphere" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="65222072960737" type="enemySphere" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="257147301274761">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="5119618549850918" type="enemySphere">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="X co-ordinate">hero.X+100</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="544465923864082" type="enemySphere">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">hero.X - 100</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="2138057687078658" type="enemySphere">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Y co-ordinate">hero.Y+100</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="8678294762598281" type="enemySphere">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Y co-ordinate">hero.Y - 100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="6828104836350215" type="System">
+                                            <param id="0" name="Variable">playerHealth</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="3107865586128378">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="1076354794062369" type="mimic">
-                    <param id="0" name="Object">hero</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="4694064246111515" type="System" />
             </conditions>
             <actions>
-                <action id="-13" name="Set boolean" sid="910425481304626" type="mimic">
-                    <param id="0" name="Instance variable">opened</param>
-                    <param id="1" name="Value">1</param>
+                <action id="0" name="Play" sid="3872566049480064" type="Audio">
+                    <param id="0" name="Audio file">346200__levelclearer__battle</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;boss&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="4354386121046896">
+        <event-block sid="1733109868547681">
             <conditions>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="611734424424171" type="mimic">
-                    <param id="0" name="Instance variable">allowAttack</param>
-                </condition>
-                <condition id="-6" name="Every X seconds" sid="1922059950137833" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
-                </condition>
+                <condition id="-3" name="On end of layout" sid="4339168653234538" type="System" />
             </conditions>
             <actions>
-                <action id="-13" name="Set boolean" sid="1297283180632036" type="mimic">
-                    <param id="0" name="Instance variable">allowAttack</param>
-                    <param id="1" name="Value">1</param>
+                <action id="6" name="Stop" sid="3555562322316881" type="Audio">
+                    <param id="0" name="Tag">&quot;boss&quot;</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="3223930741439666">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="2100605961069051" type="mimic">
-                    <param id="0" name="Object">playerSwipe</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="104916459955261" type="mimic">
-                    <param id="0" name="Instance variable">health</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="0" name="Set text" sid="3016363013111491" type="BossHealth">
-                    <param id="0" name="Text">&quot;Boss Health: &quot;&amp; mimic.health</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7994540610967717">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="6120706480924554" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="2730164699306051" type="BossHealth">
-                    <param id="0" name="Text">&quot;Boss Health: &quot; &amp;  mimic.health</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8830602539964939">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="86847218076319" type="mimic" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="7980292355403933" type="System">
-                    <param id="0" name="Layout">Conclusion</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2455305618445313">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="7602748804422612" type="mimic">
-                    <param id="0" name="Instance variable">health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="9067339058604567" type="mimic" />
             </actions>
         </event-block>
     </events>
