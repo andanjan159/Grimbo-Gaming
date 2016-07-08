@@ -15,11 +15,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">Sub 2</layout>
         <layout order="6">Sub 3</layout>
         <layout order="8">Sub 4</layout>
-        <layout order="10">Title Page</layout>
+        <layout active="1" order="10">Title Page</layout>
         <layout order="12">Control Layout</layout>
         <layout order="14">Conclusion</layout>
         <layout order="16">Test</layout>
-        <event-sheet active="1" order="1">Hub Events</event-sheet>
+        <event-sheet order="1">Hub Events</event-sheet>
         <event-sheet order="3">Sub 1 Events</event-sheet>
         <event-sheet order="5">Sub 2 Events</event-sheet>
         <event-sheet order="7">Sub 3 Events</event-sheet>
@@ -88,5 +88,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/enemySphere/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/wallAntiMagic/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Controlbutton2/" />
+        <folder expanded="1" path="animation-folder/StartButton2/" />
     </folders-expanded>
 </c2uistate>
