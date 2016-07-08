@@ -1090,7 +1090,6 @@
         <object-type name="Text8" sid="4865009353211975">
             <plugin id="Text" />
         </object-type>
-<<<<<<< HEAD
         <object-type name="finalDoor" sid="1255008194191043">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1135,7 +1134,8 @@
             <plugin id="Text" />
         </object-type>
         <object-type name="Text10" sid="8443704777269405">
-=======
+            <plugin id="Text" />
+        </object-type>
         <object-type name="Sprite8" sid="5419429031626624">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1145,7 +1145,6 @@
             </animation-folder>
         </object-type>
         <object-type name="story" sid="140521311902602">
->>>>>>> 7b51f2f1209d3aed8ae26ec89ac6f3eb9eebef0e
             <plugin id="Text" />
         </object-type>
     </object-folder>
