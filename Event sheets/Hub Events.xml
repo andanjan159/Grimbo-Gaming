@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Hub Events</name>
     <events>
+        <variable constant="0" name="onHub" sid="9391153805853941" static="0" type="number">0</variable>
+        <variable constant="0" name="spawnY" sid="7447096492232066" static="0" type="number">0</variable>
+        <variable constant="0" name="spawnX" sid="9220299205802817" static="0" type="number">0</variable>
         <variable constant="0" name="playerHealth" sid="6038929269285387" static="0" type="number">25</variable>
         <variable constant="0" name="playerAS" sid="6245978028278152" static="0" type="number">1</variable>
         <event-block sid="135956644599215">
@@ -750,6 +753,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="2459489778926597" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="3692664288747149" type="System">
                     <param id="0" name="Layout">Sub1</param>
                 </action>
@@ -762,6 +769,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="2040756415677491" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="3391465896965154" type="System">
                     <param id="0" name="Layout">Sub 2</param>
                 </action>
@@ -774,6 +785,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="7699642458193059" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="6879251547453092" type="System">
                     <param id="0" name="Layout">Sub 3</param>
                 </action>
@@ -786,6 +801,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="1561466941620551" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="5910704784830421" type="System">
                     <param id="0" name="Layout">Sub 4</param>
                 </action>
@@ -910,13 +929,20 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="2027137960910445" type="hero">
-                    <param id="0" name="Instance variable">spawnX</param>
+                <action id="-9" name="Set value" sid="2027137960910445" type="System">
+                    <param id="0" name="Variable">spawnX</param>
                     <param id="1" name="Value">416</param>
                 </action>
-                <action id="-10" name="Set value" sid="3933684974809578" type="hero">
-                    <param id="0" name="Instance variable">spawnX</param>
+                <action id="-9" name="Set value" sid="3933684974809578" type="System">
+                    <param id="0" name="Variable">spawnY</param>
                     <param id="1" name="Value">512</param>
+                </action>
+                <action id="-9" name="Set value" sid="9010561760668751" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1843047183013278" type="System">
+                    <param id="0" name="Layout">Hub World</param>
                 </action>
             </actions>
         </event-block>
@@ -927,32 +953,95 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="3978385863059486" type="hero">
-                    <param id="0" name="Instance variable">spawnX</param>
+                <action id="-9" name="Set value" sid="3978385863059486" type="System">
+                    <param id="0" name="Variable">spawnX</param>
                     <param id="1" name="Value">2368</param>
                 </action>
-                <action id="-10" name="Set value" sid="6720335659774021" type="hero">
-                    <param id="0" name="Instance variable">spawnX</param>
+                <action id="-9" name="Set value" sid="6720335659774021" type="System">
+                    <param id="0" name="Variable">spawnY</param>
                     <param id="1" name="Value">1664</param>
+                </action>
+                <action id="-9" name="Set value" sid="8026317992066268" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="2638413439243183" type="System">
+                    <param id="0" name="Layout">Hub World</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="5848104104725119">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8412012646863026" type="hero">
-                    <param id="0" name="Object">door1Exit</param>
+                    <param id="0" name="Object">door3Exit</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="7183122323737907" type="hero">
-                    <param id="0" name="Instance variable">spawnX</param>
-                    <param id="1" name="Value">416</param>
+                <action id="-9" name="Set value" sid="7183122323737907" type="System">
+                    <param id="0" name="Variable">spawnX</param>
+                    <param id="1" name="Value">2016</param>
                 </action>
-                <action id="-10" name="Set value" sid="5355646427533328" type="hero">
-                    <param id="0" name="Instance variable">spawnX</param>
-                    <param id="1" name="Value">512</param>
+                <action id="-9" name="Set value" sid="5355646427533328" type="System">
+                    <param id="0" name="Variable">spawnY</param>
+                    <param id="1" name="Value">256</param>
+                </action>
+                <action id="-9" name="Set value" sid="9092915336337766" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9374485676887643" type="System">
+                    <param id="0" name="Layout">Hub World</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="968719000936561">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="793915761760227" type="hero">
+                    <param id="0" name="Object">door4Exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9513581352816231" type="System">
+                    <param id="0" name="Variable">spawnX</param>
+                    <param id="1" name="Value">608</param>
+                </action>
+                <action id="-9" name="Set value" sid="7916926356481293" type="System">
+                    <param id="0" name="Variable">spawnY</param>
+                    <param id="1" name="Value">2784</param>
+                </action>
+                <action id="-9" name="Set value" sid="2221953136081848" type="System">
+                    <param id="0" name="Variable">onHub</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="3133789529323352" type="System">
+                    <param id="0" name="Layout">Hub World</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2334701015195962">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6208542902496807" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5275276501885248">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5110348612410518" type="System">
+                            <param id="0" name="Variable">onHub</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="187914681543093" type="hero">
+                            <param id="0" name="X">spawnX</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="5154477989085806" type="hero">
+                            <param id="0" name="Y">spawnY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
