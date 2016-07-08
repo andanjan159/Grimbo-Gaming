@@ -55,8 +55,6 @@
             <instance-variables>
                 <instance-variable name="allowMove" sid="812518949669674" type="boolean" />
                 <instance-variable name="allowAttack" sid="622381258247348" type="boolean" />
-                <instance-variable name="spawnX" sid="6934954635711536" type="number" />
-                <instance-variable name="spawnY" sid="9273151920176664" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="5220840455507999">
