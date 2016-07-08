@@ -707,10 +707,6 @@
                 <condition id="0" name="On collision with another object" sid="7336040355489578" type="enemySwipe">
                     <param id="0" name="Object">hero</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="8416364321342358" type="enemySwipe">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Number">1</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="5300079747157488" type="System">
