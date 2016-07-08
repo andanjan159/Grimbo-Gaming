@@ -1045,7 +1045,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9478436332092556" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\Final\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\Final\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1053,7 +1053,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298319497937857" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1061,7 +1061,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3030831575396142" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1069,7 +1069,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5351739140447692" speed="5">
-                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1103,7 +1103,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="534" />
-        <global-instance type="Mouse" uid="997" />
+        <global-instance type="Mouse" uid="1015" />
     </global-instances>
     <sounds-folder />
     <music-folder />
