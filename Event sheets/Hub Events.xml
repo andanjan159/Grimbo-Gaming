@@ -1180,5 +1180,28 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="7199730729568346">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3713784385496822" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1403540999065785" type="Audio">
+                    <param id="0" name="Audio file">349034__snapper4298__guitar-elec-echo-102bpm</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Hub music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9760444102561895">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="8798459084079242" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="4492928596876722" type="Audio">
+                    <param id="0" name="Tag">&quot;Hub music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
