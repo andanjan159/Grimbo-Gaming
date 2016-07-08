@@ -10,24 +10,24 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Hub World</layout>
-        <layout order="3">Sub1</layout>
-        <layout order="5">Sub 2</layout>
-        <layout order="7">Sub 3</layout>
-        <layout order="9">Sub 4</layout>
-        <layout order="11">Title Page</layout>
-        <layout order="13">Control Layout</layout>
-        <layout order="15">Conclusion</layout>
-        <layout order="17">Test</layout>
-        <event-sheet active="1" order="2">Hub Events</event-sheet>
-        <event-sheet order="4">Sub 1 Events</event-sheet>
-        <event-sheet order="6">Sub 2 Events</event-sheet>
-        <event-sheet order="8">Sub 3 Events</event-sheet>
-        <event-sheet order="10">Sub 4 Events</event-sheet>
-        <event-sheet order="12">Title Page Event</event-sheet>
-        <event-sheet order="14">Control Layout Event</event-sheet>
-        <event-sheet order="16">Conclusion Event Sheet</event-sheet>
-        <event-sheet order="18">Dungeon Generator</event-sheet>
+        <layout active="1" order="0">Hub World</layout>
+        <layout order="2">Sub1</layout>
+        <layout order="4">Sub 2</layout>
+        <layout order="6">Sub 3</layout>
+        <layout order="8">Sub 4</layout>
+        <layout order="10">Title Page</layout>
+        <layout order="12">Control Layout</layout>
+        <layout order="14">Conclusion</layout>
+        <layout order="16">Test</layout>
+        <event-sheet order="1">Hub Events</event-sheet>
+        <event-sheet order="3">Sub 1 Events</event-sheet>
+        <event-sheet order="5">Sub 2 Events</event-sheet>
+        <event-sheet order="7">Sub 3 Events</event-sheet>
+        <event-sheet order="9">Sub 4 Events</event-sheet>
+        <event-sheet order="11">Title Page Event</event-sheet>
+        <event-sheet order="13">Control Layout Event</event-sheet>
+        <event-sheet order="15">Conclusion Event Sheet</event-sheet>
+        <event-sheet order="17">Dungeon Generator</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
