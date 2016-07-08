@@ -154,7 +154,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="StartButton2" uid="822">
+                <instance type="StartButton2" uid="518">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -195,7 +195,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Title" uid="518">
+                <instance type="Title" uid="519">
                     <properties>
                         <text>Expand World</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -222,9 +222,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GimboGaming" uid="519">
+                <instance type="GimboGaming" uid="520">
                     <properties>
-                        <text>By Gimbo Gaming</text>
+                        <text>By Grimbo Gaming</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-27,400,0</font>
                         <color>255,255,51</color>
@@ -249,7 +249,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="StartButton" uid="520">
+                <instance type="StartButton" uid="521">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -271,7 +271,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Start" uid="521">
+                <instance type="Start" uid="522">
                     <properties>
                         <text>Start</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -298,9 +298,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Controlls" uid="522">
+                <instance type="Controlls" uid="523">
                     <properties>
-                        <text>Controlls</text>
+                        <text>Controls</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Elephant,-48,400,0</font>
                         <color>0,255,0</color>

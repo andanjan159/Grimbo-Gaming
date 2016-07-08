@@ -292,6 +292,8 @@
                     <instance-variables>
                         <allowMove>true</allowMove>
                         <allowAttack>false</allowAttack>
+                        <spawnX>0</spawnX>
+                        <spawnY>0</spawnY>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -348,8 +350,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1664</x>
-                        <y>32</y>
+                        <x>1632</x>
+                        <y>192</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -592,7 +594,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1600</x>
-                        <y>32</y>
+                        <y>256</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -621,7 +623,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1664</x>
-                        <y>96</y>
+                        <y>256</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -867,6 +869,35 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="blueLock" uid="993">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1536</x>
+                        <y>256</y>
+                        <z>0</z>
+                        <width>70</width>
+                        <height>70</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -902,6 +933,55 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="door1Exit" uid="992">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1632</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Health" uid="996">
+                    <properties>
+                        <text></text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
                         <y>0</y>
                         <z>0</z>
                         <width>200</width>

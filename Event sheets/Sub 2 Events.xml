@@ -39,16 +39,6 @@
                 <action id="-9" name="Destroy" sid="4954505635423761" type="enemy1" />
             </actions>
         </event-block>
-        <event-block sid="5345502500407873">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="7836348086470446" type="enemy4">
-                    <param id="0" name="Object">lava</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="2845737692351228" type="enemy4" />
-            </actions>
-        </event-block>
         <event-block sid="3174462941620534">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3544038694878052" type="hero">

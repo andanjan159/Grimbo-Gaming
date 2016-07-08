@@ -55,6 +55,8 @@
             <instance-variables>
                 <instance-variable name="allowMove" sid="812518949669674" type="boolean" />
                 <instance-variable name="allowAttack" sid="622381258247348" type="boolean" />
+                <instance-variable name="spawnX" sid="6934954635711536" type="number" />
+                <instance-variable name="spawnY" sid="9273151920176664" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="5220840455507999">
@@ -754,15 +756,15 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1183704384171235" speed="0">
                     <frame duration="1" hotspotX="0.504883" hotspotY="0.563477" original-source="D:\finalConstructProject\Grimbo-Gaming\whiteSlash.png">
                         <collision-poly>
-                            <point x="0.442871" y="0.473145" />
-                            <point x="0.5" y="0.459473" />
-                            <point x="0.557129" y="0.472168" />
-                            <point x="0.604492" y="0.53418" />
+                            <point x="0.442871" y="0.455567" />
+                            <point x="0.5" y="0.439453" />
+                            <point x="0.557129" y="0.454102" />
+                            <point x="0.604492" y="0.496094" />
                             <point x="0.604492" y="0.627686" />
                             <point x="0.530274" y="0.627929" />
                             <point x="0.484375" y="0.627442" />
                             <point x="0.407226" y="0.627441" />
-                            <point x="0.407226" y="0.522949" />
+                            <point x="0.407226" y="0.491699" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1041,6 +1043,38 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="door1Exit" sid="290232515558639">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9478436332092556" speed="5">
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\Final\Grimbo-Gaming\Files\blackSwitch.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door3Exit" sid="8652413299397938">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298319497937857" speed="5">
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door4Exit" sid="3408528272210661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3030831575396142" speed="5">
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door2Exit" sid="1658143514320979">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5351739140447692" speed="5">
+                    <frame duration="1" hotspotX="-1.#IND" hotspotY="-1.#IND" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1070,8 +1104,8 @@
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="533" />
-        <global-instance type="Mouse" uid="534" />
+        <global-instance type="Keyboard" uid="534" />
+        <global-instance type="Mouse" uid="997" />
     </global-instances>
     <sounds-folder />
     <music-folder />
