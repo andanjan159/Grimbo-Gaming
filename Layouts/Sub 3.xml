@@ -1011,8 +1011,8 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>-1</hotspotX>
+                        <hotspotY>-1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

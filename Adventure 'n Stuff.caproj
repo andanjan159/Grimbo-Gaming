@@ -1081,6 +1081,7 @@
             <layout>Sub 2.xml</layout>
             <layout>Sub 3.xml</layout>
             <layout>Sub 4.xml</layout>
+            <layout>BossRoom.xml</layout>
         </layout-folder>
         <layout>Hub World.xml</layout>
         <layout>Test.xml</layout>
@@ -1100,6 +1101,7 @@
         <event-sheet>Title Page Event.xml</event-sheet>
         <event-sheet>Control Layout Event.xml</event-sheet>
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
+        <event-sheet>BossRoomEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="534" />

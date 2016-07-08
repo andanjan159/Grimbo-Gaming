@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="forest" uid="527">
+                <instance type="forest" uid="528">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="endingJokeText" uid="528">
+                <instance type="endingJokeText" uid="529">
                     <properties>
                         <text>Congrats---------Ya Suck</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -97,7 +97,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="RealEndingText" uid="529">
+                <instance type="RealEndingText" uid="530">
                     <properties>
                         <text>For Real... Thanks For Playing</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -124,7 +124,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MainMenu" uid="530">
+                <instance type="MainMenu" uid="531">
                     <properties>
                         <text>Main Menu</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -151,7 +151,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="531">
+                <instance type="Sprite4" uid="532">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -173,7 +173,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="532">
+                <instance type="Sprite4" uid="533">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

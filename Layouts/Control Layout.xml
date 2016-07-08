@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="523">
+                <instance type="Sprite2" uid="524">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -119,7 +119,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Back2" uid="524">
+                <instance type="Back2" uid="527">
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Visible</initial-visibility>
