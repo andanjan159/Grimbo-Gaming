@@ -697,6 +697,11 @@
         </object-type>
         <object-type name="MainChest" sid="7034317242090549">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6039199194751571">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9001688981938046" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Final Project\Grimbo-Gaming\Main Chest.png">
@@ -1018,29 +1023,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Controlbutton2" sid="6600754976785408">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3934391443589349" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="StartButton2" sid="2449688986855923">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1787584094596178" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.535999" />
-                            <point x="0" y="0.535999" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="door1Exit" sid="290232515558639">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1073,6 +1055,87 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="2637621049741852">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="1777201186070525">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Credits" sid="7639548402050109">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite7" sid="9667227590963787">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7483750628401317" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text4" sid="6248492087522926">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="7035804559392356">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text6" sid="7167563280509236">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text7" sid="7086342188822305">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="2ndBack" sid="3611598459119034">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text8" sid="4865009353211975">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="finalDoor" sid="1255008194191043">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4268248218499726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\finalConstructProject\Grimbo-Gaming\Files\blackSwitch.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mimic" sid="6616710204936921">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="opened" sid="7207707959878146" type="boolean" />
+                <instance-variable name="allowAttack" sid="1424359761341113" type="boolean" />
+                <instance-variable name="allowMove" sid="1502820967302208" type="boolean" />
+                <instance-variable name="health" sid="7518499652785581" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="2860448391746221">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1499048539537502" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\finalConstructProject\Grimbo-Gaming\Main Chest.png">
+                        <collision-poly>
+                            <point x="0.149305" y="0.326172" />
+                            <point x="0.854167" y="0.322266" />
+                            <point x="0.857639" y="0.716797" />
+                            <point x="0.149306" y="0.716797" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BossHealth" sid="4136589933873562">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="5957578924327585">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text9" sid="1625429468315209">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text10" sid="8443704777269405">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1088,6 +1151,7 @@
         <layout>Title Page.xml</layout>
         <layout>Control Layout.xml</layout>
         <layout>Conclusion.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Sub events">
@@ -1102,10 +1166,11 @@
         <event-sheet>Control Layout Event.xml</event-sheet>
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
         <event-sheet>BossRoomEvents.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="534" />
-        <global-instance type="Mouse" uid="1015" />
+        <global-instance type="Keyboard" uid="1173" />
+        <global-instance type="Mouse" uid="1174" />
     </global-instances>
     <sounds-folder />
     <music-folder />

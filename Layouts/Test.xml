@@ -9476,7 +9476,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="playerSwipe" uid="1">
+                <instance type="playerSwipe" uid="495">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9498,7 +9498,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemySwipe" uid="495">
+                <instance type="enemySwipe" uid="514">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

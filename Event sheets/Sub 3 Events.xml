@@ -4,124 +4,74 @@
     <name>Sub 3 Events</name>
     <events>
         <include>Hub Events</include>
-        <event-block sid="2075082731779585">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="6979803086271231" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="560551006957444" type="keyAmount">
-                    <param id="0" name="Text">&quot;Keys: &quot; &amp;keyPoints</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block any="1" sid="3926301065504128">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1976071675559499" type="hero">
-                    <param id="0" name="Object">caveDoorBottom</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="1182786446369542" type="hero">
-                    <param id="0" name="Object">caveDoorTop</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="3603371634655152" type="System">
-                    <param id="0" name="Layout">Hub World</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2253897335986145">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="360963349056107" type="hero">
-                    <param id="0" name="Object">lava</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="6109198092104746" type="hero" />
-            </actions>
-        </event-block>
-        <event-block sid="48474040982365">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3615381021009618" type="enemy1">
-                    <param id="0" name="Object">lava</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="6406755583061851" type="enemy1" />
-            </actions>
-        </event-block>
-        <event-block sid="6665632737413149">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5780637855313598" type="enemy4">
-                    <param id="0" name="Object">lava</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="700121747875029" type="enemy4" />
-            </actions>
-        </event-block>
-        <event-block sid="6336216269483853">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="446807659029001" type="hero">
-                    <param id="0" name="Object">blackSwitch</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="2566998865938051" type="blueBlock">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="1352008858234928" type="blueBlock">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="5" name="Set frame" sid="1706140962875549" type="greenBlock">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="5606194868882555" type="greenBlock">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1936578621858433">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1130067993904918" type="hero">
-                    <param id="0" name="Object">greySwitch</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="6318636926105828" type="greenBlock">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="1813651747728822" type="greenBlock">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="5" name="Set frame" sid="9981055020684705" type="purpleBlock">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="5800017669766825" type="purpleBlock">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8990761967064331">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5536363105512645" type="hero">
-                    <param id="0" name="Object">whiteSwitch</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="596757132675495" type="purpleBlock">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="8797000899521973" type="purpleBlock">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="5" name="Set frame" sid="8325558184961848" type="blueBlock">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="5410472247423429" type="blueBlock">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
+        <comment>For the room&apos;s puzzle</comment>
+        <event-group description="" sid="1976894227708394" title="Puzzle">
+            <sub-events>
+                <event-block sid="8990761967064331">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5536363105512645" type="hero">
+                            <param id="0" name="Object">whiteSwitch</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="596757132675495" type="purpleBlock">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="8797000899521973" type="purpleBlock">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="8325558184961848" type="blueBlock">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5410472247423429" type="blueBlock">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1936578621858433">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1130067993904918" type="hero">
+                            <param id="0" name="Object">greySwitch</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6318636926105828" type="greenBlock">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1813651747728822" type="greenBlock">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="9981055020684705" type="purpleBlock">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5800017669766825" type="purpleBlock">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6336216269483853">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="446807659029001" type="hero">
+                            <param id="0" name="Object">blackSwitch</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2566998865938051" type="blueBlock">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1352008858234928" type="blueBlock">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1706140962875549" type="greenBlock">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5606194868882555" type="greenBlock">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="2762114092152291">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="853236425169733" type="hero">
@@ -131,23 +81,6 @@
             <actions>
                 <action id="-9" name="Destroy" sid="6634426617020464" type="greenButton" />
                 <action id="-9" name="Destroy" sid="1410504426921475" type="greenLock" />
-            </actions>
-        </event-block>
-        <event-block sid="3913323325890476">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8264766977039237" type="hero">
-                    <param id="0" name="Object">keys</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="7473469283497046" type="System">
-                    <param id="0" name="Variable">keyPoints</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="9779714201626733" type="keys" />
-                <action id="0" name="Set text" sid="2701376574105839" type="keyAmount">
-                    <param id="0" name="Text">&quot;Keys: &quot;&amp;keyPoints</param>
-                </action>
             </actions>
         </event-block>
     </events>

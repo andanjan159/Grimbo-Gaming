@@ -4,57 +4,5 @@
     <name>Sub 2 Events</name>
     <events>
         <include>Hub Events</include>
-        <event-block any="1" sid="2463681145823779">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="985165446493757" type="hero">
-                    <param id="0" name="Object">caveDoorBottom</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="3738297046693851" type="hero">
-                    <param id="0" name="Object">caveDoorTop</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="6751844654922905" type="System">
-                    <param id="0" name="Layout">Hub World</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7173191123783644">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="4610255099178513" type="hero">
-                    <param id="0" name="Object">lava</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="7236702668235776" type="hero" />
-            </actions>
-        </event-block>
-        <event-block sid="759035667617162">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="4773371002329782" type="enemy1">
-                    <param id="0" name="Object">lava</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="4954505635423761" type="enemy1" />
-            </actions>
-        </event-block>
-        <event-block sid="3174462941620534">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3544038694878052" type="hero">
-                    <param id="0" name="Object">keys</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="1349642103145075" type="System">
-                    <param id="0" name="Variable">keyPoints</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="7380169983032098" type="keys" />
-                <action id="0" name="Set text" sid="1026180680267451" type="keyAmount">
-                    <param id="0" name="Text">&quot;Keys: &quot;&amp;keyPoints</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
