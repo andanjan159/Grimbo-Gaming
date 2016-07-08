@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TitleBackground" uid="514">
+                <instance type="TitleBackground" uid="515">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Credits" uid="515">
+                <instance type="Credits" uid="518">
                     <properties>
                         <text>Credits</text>
                         <initial-visibility>Visible</initial-visibility>

@@ -1085,6 +1085,17 @@
         <object-type name="Text8" sid="4865009353211975">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite8" sid="5419429031626624">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5814982981362697" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="story" sid="140521311902602">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1100,6 +1111,7 @@
         <layout>Control Layout.xml</layout>
         <layout>Conclusion.xml</layout>
         <layout>Credits.xml</layout>
+        <layout>Story.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Sub events">
@@ -1114,6 +1126,7 @@
         <event-sheet>Control Layout Event.xml</event-sheet>
         <event-sheet>Conclusion Event Sheet.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>story Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1023" />

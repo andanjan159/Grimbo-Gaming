@@ -146,7 +146,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="998">
+                <instance type="Text" uid="528">
                     <properties>
                         <text>Attack</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -173,7 +173,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="999">
+                <instance type="Text2" uid="529">
                     <properties>
                         <text>Move</text>
                         <initial-visibility>Visible</initial-visibility>

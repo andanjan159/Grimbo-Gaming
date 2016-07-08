@@ -14,14 +14,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Sub1</layout>
         <layout order="4">Sub 2</layout>
         <layout order="6">Sub 3</layout>
-        <layout order="8">Sub 4</layout>
+        <layout active="1" order="8">Sub 4</layout>
         <layout order="10">Title Page</layout>
         <layout order="12">Control Layout</layout>
         <layout order="14">Conclusion</layout>
         <layout order="16">Test</layout>
         <layout order="18">Credits</layout>
+        <layout order="20">Story</layout>
         <event-sheet order="1">Hub Events</event-sheet>
-        <event-sheet active="1" order="3">Sub 1 Events</event-sheet>
+        <event-sheet order="3">Sub 1 Events</event-sheet>
         <event-sheet order="5">Sub 2 Events</event-sheet>
         <event-sheet order="7">Sub 3 Events</event-sheet>
         <event-sheet order="9">Sub 4 Events</event-sheet>
@@ -30,6 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="15">Conclusion Event Sheet</event-sheet>
         <event-sheet order="17">Dungeon Generator</event-sheet>
         <event-sheet order="19">Event sheet 1</event-sheet>
+        <event-sheet order="21">story Event Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -96,5 +98,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/door4Exit/" />
         <folder expanded="1" path="animation-folder/door2Exit/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
     </folders-expanded>
 </c2uistate>

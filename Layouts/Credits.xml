@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite7" uid="518">
+                <instance type="Sprite7" uid="1016">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text4" uid="1000">
+                <instance type="Text4" uid="1017">
                     <properties>
                         <text>Sprites: Charas Online Resource Generator</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -97,7 +97,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text5" uid="1001">
+                <instance type="Text5" uid="1018">
                     <properties>
                         <text>Sound Assests: Free Sounds.org</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -124,7 +124,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text6" uid="1002">
+                <instance type="Text6" uid="1019">
                     <properties>
                         <text>Credits</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -151,7 +151,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text7" uid="1003">
+                <instance type="Text7" uid="1020">
                     <properties>
                         <text>Backgrounds: Forest Sprite Backgrounds.org</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -178,7 +178,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="2ndBack" uid="1004">
+                <instance type="2ndBack" uid="1021">
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -205,7 +205,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text8" uid="1005">
+                <instance type="Text8" uid="1022">
                     <properties>
                         <text>Back</text>
                         <initial-visibility>Invisible</initial-visibility>
