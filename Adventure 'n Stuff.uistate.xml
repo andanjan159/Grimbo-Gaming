@@ -19,9 +19,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="12">Control Layout</layout>
         <layout order="14">Conclusion</layout>
         <layout order="16">Test</layout>
-        <layout active="1" order="18">Credits</layout>
+        <layout order="18">Credits</layout>
         <event-sheet order="1">Hub Events</event-sheet>
-        <event-sheet order="3">Sub 1 Events</event-sheet>
+        <event-sheet active="1" order="3">Sub 1 Events</event-sheet>
         <event-sheet order="5">Sub 2 Events</event-sheet>
         <event-sheet order="7">Sub 3 Events</event-sheet>
         <event-sheet order="9">Sub 4 Events</event-sheet>
