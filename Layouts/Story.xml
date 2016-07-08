@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite8" uid="1025">
+                <instance type="Sprite8" uid="1173">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,9 +51,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="story" uid="1026">
+                <instance type="story" uid="1174">
                     <properties>
-                        <text>Invaders have attacked your village in the middle of the forest.  Your dad stayed to protect the village, but died from their magic balls and iron swords.  You and your mother escaped the village and headed out to the forest.  Sadly, your mother grew ill and died in your waking hands.  You are left with a chest and no keys to open it.  When your mother was dying, she said that there is a hidden secret in the chest.  Since you have nothing else to rely on, you decide to take on the challenge of finding keys to open the chest.  The keys are scattered around the caves near you.  Find the 4 missing keys and destroy the invaders.</text>
+                        <text>Invaders have attacked your village in the middle of the forest.  Your dad stayed to protect the village, but died from their magic balls and iron swords.  You and your mother escaped the village and headed out to the forest.  Sadly, your mother grew ill and died in your waking hands.  You are left with a chest and no keys to open it.  When your mother was dying, she said that there is a hidden secret in the chest.  Since you have nothing else to rely on, you decide to take on the challenge of finding keys to open the chest.  The keys are scattered around the caves near you.  Find the 4 missing keys and destroy the invaders.               Click to Continue.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-28,400,0</font>
                         <color>255,255,255</color>

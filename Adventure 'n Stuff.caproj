@@ -10,6 +10,7 @@
     <unique-id>x8n75oxc6aca</unique-id>
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -1147,6 +1148,9 @@
         <object-type name="story" sid="140521311902602">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Audio" sid="3182693588607086">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1182,8 +1186,22 @@
         <event-sheet>story Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="1173" />
-        <global-instance type="Mouse" uid="1174" />
+        <global-instance type="Keyboard" uid="1182" />
+        <global-instance type="Mouse" uid="1183" />
+        <global-instance type="Audio" uid="1184">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />
